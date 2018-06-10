@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>bookmark</title>
+    <script type="text/javascript" src="bookmark.js"></script>
+    <!--
+    <script type="text/javascript">
+      function size() {
+        var height = document.documentElement.clientHeight;
+        var width = document.documentElement.clientWidth;
+        alert('高さ：' + height + ', 幅：' + width);
+      }
+    </script>
+     -->
+    <link rel="stylesheet" type="text/css" href="vertical.css" media="screen and (max-width:1080px)">
+    <link rel="stylesheet" type="text/css" href="side.css" media="screen and (min-width:1081px)">
+    <link rel="icon" type="image/png" href="bookmark.png">
+  </head>
+  <body>
+    <!-- <span>▷</span><a href="#" onclick="size(); return false;">size</a> -->
+    <div id="outer">
+      <div id="left">
+        <div id="inner">
+          <div id="m1">
+            <h1>GranblueFantasy</h1>
+            <span>▷</span><a href="http://granbluefantasy.jp/">公式</a><br/>
+            <span>▷</span><a href="http://game.granbluefantasy.jp/#top">Web版グランブルーファンタジー</a><br/>
+            <!-- <span>▷</span><a href="#" onclick="granbluefantasy_game(); return false;">Web版グランブルーファンタジー</a><br/> -->
+            <span>▷</span><a href="http://mirror.gbf-wiki.com/">グラブルwiki ミラー</a><br/>
+            <span>▷</span><a href="https://granblue.jp/">火力騎空士への道</a><br/>
+            <span>▷</span><a href="#" onclick="granbluefantasy_raidfinder(); return false;">raidfinder</a><br/>
+            <span>▷</span><a href="http://gbf-bbs.com/">グラブル騎空団募集掲示板</a><br/>
+            <span>▷</span><a href="https://prfac.com/gbf/summon/">フレ石編成的ななにか</a><br/>
+            <span>▷</span><a href="http://hsimyu.net/motocal/">元カレ計算機</a>
+          </div>
+          <div id="m1">
+            <h1>SNS</h1>
+            <span>▷</span><a href="https://discordapp.com/">Discord</a><br/>
+            <span>▷</span><a href="http://ja-jp.facebook.com/">Facebook</a><br/>
+            <span>▷</span><a href="#" onclick="mstdn_jp(); return false;">mstdn.jp</a><br/>
+            <span>▷</span><a href="#" onclick="mstdn_workers(); return false;">mstdn-workers.com</a><br/>
+            <span>▷</span><a href="https://www.pixiv.net/">Pixiv</a><br/>
+            <span>▷</span><a href="https://soundcloud.com/">SoundCloud</a><br/>
+            <span>▷</span><a href="#" onclick="plug_dj(); return false;">スナックへるつ＠Plug.dj</a><br/>
+            <span>▷</span><a href="http://hatenablog.com/">はてなブログ</a>
+          </div>
+          <div id="m1">
+            <h1>Twitter</h1>
+            <span>▷</span><a href="http://twitter.com/">Twitter</a><br/>
+            <span>▷</span><a href="http://zoi.herokuapp.com/">zoi</a><br/>
+            <span>▷</span><a href="http://shindanmaker.com/235254">今夜が山のようです</a>
+          </div>
+        </div>
+        <div id="inner">
+          <div id="m1">
+            <h1>Google</h1>
+            <span>▷</span><a href="http://www.google.co.jp/">Google</a><br/>
+            <span>▷</span><a href="https://calendar.google.com/calendar/">GoogleCalendar</a><br/>
+            <span>▷</span><a href="https://www.google.co.jp/maps/">GoogleMap</a><br/>
+            <span>▷</span><a href="https://play.google.com/store">GooglePlay</a><br/>
+            <span>▷</span><a href="https://docs.google.com/spreadsheets/">GoogleSpreadSheets</a><br/>
+            <span>▷</span><a href="https://translate.google.co.jp/">Google翻訳</a>
+          </div>
+          <div id="m1">
+            <h1>Yahoo!</h1>
+            <span>▷</span><a href="http://www.yahoo.co.jp/">Yahoo! Japan</a><br/>
+            <span>▷</span><a href="https://weather.yahoo.co.jp/weather/jp/3.html?day=1">Yahoo! 天気(関東)</a><br/>
+            <span>▷</span><a href="https://transit.yahoo.co.jp/">Yahoo! 乗換案内</a><br/>
+            <span>▷</span><a href="https://transit.yahoo.co.jp/traininfo/area/4/">Yahoo! 路線情報(関東)</a><br/>
+          </div>
+        </div>
+      </div>
+      <div id="right">
+        <div id="inner">
+          <div id="m1">
+            <h1>RSS</h1>
+            <span>▷</span><a href="http://japanese.engadget.com/">Engadget</a><br/>
+            <span>▷</span><a href="http://gigazine.net/">GIGAZINE</a><br/>
+            <span>▷</span><a href="http://www.gizmodo.jp/">Gizmodo</a><br/>
+            <span>▷</span><a href="http://www.lifehacker.jp/">LifeHacker</a><br/>
+            <span>▷</span><a href="http://jp.techcrunch.com/">TechCrunch</a><br/>
+            <span>▷</span><a href="http://nlab.itmedia.co.jp/">ねとらぼ</a><br/>
+            <span>▷</span><a href="http://www.po-kaki-to.com/">ポッカキット</a>
+          </div>
+          <div id="m1">
+            <h1>Graphic</h1>
+            <span>▷</span><a href="https://danbooru.donmai.us/">Danboru</a><br/>
+            <span>▷</span><a href="http://idol.sankakucomplex.com/">Idol Complex</a><br/>
+            <span>▷</span><a href="http://chan.sankakucomplex.com/">Sankaku Complex</a><br/>
+            <span>▷</span><a href="https://www.pinterest.jp/">Pinterest</a>
+          </div>
+          <div id="m1">
+            <h1>Movie</h1>
+            <span>▷</span><a href="https://www.amazon.co.jp/Prime-Video/b/ref=nav__aiv_piv?ie=UTF8&node=3535604051">AmazonPrimeVideo</a><br/>
+            <span>▷</span><a href="http://www.hulu.jp/">Hulu</a><br/>
+            <span>▷</span><a href="https://www.netflix.com/jp/">NetFlix</a><br/>
+            <span>▷</span><a href="http://www.b-ch.com/">バンダイチャンネル</a><br/>
+            <span>▷</span><a href="https://www.youtube.com/">YouTube</a><br/>
+            <span>▷</span><a href="http://www.nicovideo.jp/">ニコニコ動画</a>
+          </div>
+        </div>
+        <div id="inner">
+          <div id="m1">
+            <h1>Others</h1>
+            <span>▷</span><a href="http://www.amazon.co.jp/">Amazon.co.jp</a><br/>
+            <span>▷</span><a href="http://www.fliptitle.com/">FlipTitle</a><br/>
+            <span>▷</span><a href="https://www.office.com/?omkt=ja-jp">Office365</a><br/>
+            <span>▷</span><a href="https://www.instapaper.com/u">Instapaper</a><br/>
+            <span>▷</span><a href="http://getpocket.com/">Pocket</a><br/>
+            <span>▷</span><a href="#" onclick="others_24hoursofhappy(); return false;">24hoursofhappy</a><br/>
+            <span>▷</span><a href="http://uzurainfo.han-be.com/">うずらインフォ</a>
+          </div>
+        </div>
+      </div>
+      <div id="both"></div>
+    </div>
+  </body>
+</html>
