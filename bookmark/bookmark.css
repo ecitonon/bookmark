@@ -1,3 +1,4 @@
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,7 +19,6 @@ font-size: 100%;
 font: inherit;
 vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 display: block;
@@ -40,4 +40,25 @@ content: none;
 table {
 border-collapse: collapse;
 border-spacing: 0;
+}
+
+@media (min-width: 1081px) {
+  body {
+    display: grid;
+  }
+  #grid {
+    grid:
+    ".......... .......... .......... ........." 50px
+    ".......... left    right  ........." max-content
+    ".......... .......... .......... ........." 1fr
+    / 1fr max-content max-content 1fr;
+  }
+
+  #left {
+    grid_area: left;
+  }
+
+  #right {
+    grid_area: right;
+  }
 }
