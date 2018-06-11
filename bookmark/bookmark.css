@@ -42,6 +42,32 @@ border-collapse: collapse;
 border-spacing: 0;
 }
 
+* {
+  background-color: #2E2E2E;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  color: #848484;
+  font-size: 25px;
+}
+a {
+  margin-left: 1em;
+  font-size: 20px;
+}
+span {
+  color: #fff;
+  margin-left: 1em;
+  font-size: 13px;
+}
+a:link {
+  color: #2E9AFE;
+}
+a:visited {
+  color: #fa5858;
+}
+
 @media (min-width: 1081px) {
   body {
     display: grid;
