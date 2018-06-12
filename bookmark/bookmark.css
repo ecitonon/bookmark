@@ -81,15 +81,38 @@ a:visited {
   }
   #grid {
     grid:
-    ".......... .......... .......... ........." 50px
-    ".......... left    right  ........." max-content
-    ".......... .......... .......... ........." 1fr
-    / 1fr max-content max-content 1fr;
+      "....... ....... ....... ....... ......." 1fr
+      "....... grbl    sns     rss     ......." max-content
+      "....... yahoo   twitter graphic ......." max-content
+      "....... google  others  movie   ......." max-content
+      "....... ....... ....... ....... ......." 1fr
+      / 1fr max-content max-content max-content 1fr;
   }
-  #left {
-    grid_area: left;
+  #grbl {
+    grid_area: grbl;
   }
-  #right {
-    grid_area: right;
+  #sns {
+    grid_area: sns;
+  }
+  #twitter {
+    grid_area: twitter;
+  }
+  #google {
+    grid_area: google;
+  }
+  #yahoo {
+    grid_area: yahoo;
+  }
+  #graphic {
+    grid_area: graphic;
+  }
+  #movie {
+    grid_area: movie;
+  }
+  #rss {
+    grid_area: rss;
+  }
+  #others {
+    grid_area: others;
   }
 }
