@@ -87,30 +87,30 @@ a:visited {
     / 1fr max-content max-content max-content 1fr;
   }
   .grbl {
-    grid_area: "grbl";
+    grid-area: "grbl";
   }
   .sns {
-    grid_area: "sns";
+    grid-area: "sns";
   }
   .twitter {
-    grid_area: "twitter";
+    grid-area: "twitter";
   }
   .google {
-    grid_area: "google";
+    grid-area: "google";
   }
   .yahoo {
-    grid_area: "yahoo";
+    grid-area: "yahoo";
   }
   .graphic {
-    grid_area: "graphic";
+    grid-area: "graphic";
   }
   .movie {
-    grid_area: "movie";
+    grid-area: "movie";
   }
   .rss {
-    grid_area: "rss";
+    grid-area: "rss";
   }
   .others {
-    grid_area: "others";
+    grid-area: "others";
   }
 }
