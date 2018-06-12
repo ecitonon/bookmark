@@ -86,31 +86,31 @@ a:visited {
     "....... ....... ....... ....... ......." 1fr
     / 1fr max-content max-content max-content 1fr;
   }
-  #grbl {
+  .grbl {
     grid_area: grbl;
   }
-  #sns {
+  .sns {
     grid_area: sns;
   }
-  #twitter {
+  .twitter {
     grid_area: twitter;
   }
-  #google {
+  .google {
     grid_area: google;
   }
-  #yahoo {
+  .yahoo {
     grid_area: yahoo;
   }
-  #graphic {
+  .graphic {
     grid_area: graphic;
   }
-  #movie {
+  .movie {
     grid_area: movie;
   }
-  #rss {
+  .rss {
     grid_area: rss;
   }
-  #others {
+  .others {
     grid_area: others;
   }
 }
