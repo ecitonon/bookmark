@@ -78,15 +78,13 @@ a:visited {
 @media (min-width: 1081px) {
   body {
     display: grid;
-  }
-  #grid {
     grid:
-      "....... ....... ....... ....... ......." 1fr
-      "....... grbl    sns     rss     ......." max-content
-      "....... yahoo   twitter graphic ......." max-content
-      "....... google  others  movie   ......." max-content
-      "....... ....... ....... ....... ......." 1fr
-      / 1fr max-content max-content max-content 1fr;
+    "....... ....... ....... ....... ......." 1fr
+    "....... grbl    sns     rss     ......." max-content
+    "....... yahoo   twitter graphic ......." max-content
+    "....... google  others  movie   ......." max-content
+    "....... ....... ....... ....... ......." 1fr
+    / 1fr max-content max-content max-content 1fr;
   }
   #grbl {
     grid_area: grbl;
