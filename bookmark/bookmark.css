@@ -76,15 +76,15 @@ a:visited {
 }
 
 @media (min-width: 1081px) {
-  body {
+  /*body {
     display: grid;
     grid:
-    "....... ....... ....... ....... ......." 1fr
-    "....... grbl    sns     rss     ......." max-content
-    "....... yahoo   twitter graphic ......." max-content
-    "....... google  others  movie   ......." max-content
-    "....... ....... ....... ....... ......." 1fr
-    / 1fr max-content max-content max-content 1fr;
+      "....... ....... ....... ....... ......." 1fr
+      "....... grbl    sns     rss     ......." max-content
+      "....... yahoo   twitter graphic ......." max-content
+      "....... google  others  movie   ......." max-content
+      "....... ....... ....... ....... ......." 1fr
+      / 1fr max-content max-content max-content 1fr;
   }
   .grbl {
     grid-area: "grbl";
@@ -112,5 +112,46 @@ a:visited {
   }
   .others {
     grid-area: "others";
+  }*/
+  body {
+    display: grid;
+    grid-template-columns: 1fr max-content max-content max-content 1fr;
+    grid-template-rows: 1fr max-content max-content max-content 1fr;
+  }
+  .grbl {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .sns {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .twitter {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  .google {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  .yahoo {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .graphic {
+    grid-column: 4/5;
+    grid-row: 3/4;
+  }
+  .movie {
+    grid-column: 4/5;
+    grid-row: 4/5;
+  }
+  .rss {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+  .others {
+    grid-column: 3/4;
+    grid-row: 4/5;
   }
 }
