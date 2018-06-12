@@ -53,20 +53,24 @@ border-spacing: 0;
   background-color: #2E2E2E;
 }
 h1 {
+  color: #fff;
   font-size: 40px;
 }
-h2 {
-  color: #848484;
-  font-size: 25px;
+ul {
+  list-style-type: none;
+}
+ul li {
+  margin: 1em 0;
+  margin-left: 1em;
+}
+ul li::before {
+  content: "▷";
+  color: #fff;
+  font-size: 75%;
 }
 a {
-  margin-left: 1em;
+  margin-left: 0.75em;
   font-size: 20px;
-}
-span {
-  color: #fff;
-  margin-left: 1em;
-  font-size: 13px;
 }
 a:link {
   color: #2E9AFE;
