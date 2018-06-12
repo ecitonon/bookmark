@@ -1,4 +1,8 @@
 
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -42,6 +46,9 @@ border-collapse: collapse;
 border-spacing: 0;
 }
 
+
+
+/* @author ecitonon */
 * {
   background-color: #2E2E2E;
 }
@@ -79,11 +86,9 @@ a:visited {
     ".......... .......... .......... ........." 1fr
     / 1fr max-content max-content 1fr;
   }
-
   #left {
     grid_area: left;
   }
-
   #right {
     grid_area: right;
   }
