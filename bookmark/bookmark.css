@@ -120,44 +120,44 @@ a:visited {
   body {
     display: grid;
     grid-template-columns: 1fr max-content max-content max-content 1fr;
-    grid-template-rows: 1fr max-content max-content max-content 1fr;
+    grid-template-rows: max-content max-content max-content;
     grid-column-gap: 50px;
     grid-row-gap: 20px;
   }
   .grbl {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 1/2;
   }
   .sns {
     grid-column: 3/4;
-    grid-row: 2/3;
+    grid-row: 1/2;
   }
   .twitter {
     grid-column: 3/4;
-    grid-row: 3/4;
+    grid-row: 2/3;
   }
   .google {
     grid-column: 2/3;
-    grid-row: 4/5;
+    grid-row: 3/4;
   }
   .yahoo {
     grid-column: 2/3;
-    grid-row: 3/4;
+    grid-row: 2/3;
   }
   .graphic {
     grid-column: 4/5;
-    grid-row: 3/4;
+    grid-row: 2/3;
   }
   .movie {
     grid-column: 4/5;
-    grid-row: 4/5;
+    grid-row: 3/4;
   }
   .rss {
     grid-column: 4/5;
-    grid-row: 2/3;
+    grid-row: 1/2;
   }
   .others {
     grid-column: 3/4;
-    grid-row: 4/5;
+    grid-row: 3/4;
   }
 }
