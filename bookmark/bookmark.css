@@ -80,84 +80,39 @@ a:visited {
 }
 
 @media (min-width: 1081px) {
-  /*body {
+  body {
     display: grid;
     grid:
-      "....... ....... ....... ....... ......." 1fr
       "....... grbl    sns     rss     ......." max-content
       "....... yahoo   twitter graphic ......." max-content
       "....... google  others  movie   ......." max-content
-      "....... ....... ....... ....... ......." 1fr
       / 1fr max-content max-content max-content 1fr;
   }
   .grbl {
-    grid-area: "grbl";
+    grid-area: grbl;
   }
   .sns {
-    grid-area: "sns";
+    grid-area: sns;
   }
   .twitter {
-    grid-area: "twitter";
+    grid-area: twitter;
   }
   .google {
-    grid-area: "google";
+    grid-area: google;
   }
   .yahoo {
-    grid-area: "yahoo";
+    grid-area: yahoo;
   }
   .graphic {
-    grid-area: "graphic";
+    grid-area: graphic;
   }
   .movie {
-    grid-area: "movie";
+    grid-area: movie;
   }
   .rss {
-    grid-area: "rss";
+    grid-area: rss;
   }
   .others {
-    grid-area: "others";
-  }*/
-  body {
-    display: grid;
-    grid-template-columns: 1fr max-content max-content max-content 1fr;
-    grid-template-rows: max-content max-content max-content;
-    grid-column-gap: 50px;
-    grid-row-gap: 20px;
-  }
-  .grbl {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  .sns {
-    grid-column: 3/4;
-    grid-row: 1/2;
-  }
-  .twitter {
-    grid-column: 3/4;
-    grid-row: 2/3;
-  }
-  .google {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
-  .yahoo {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-  .graphic {
-    grid-column: 4/5;
-    grid-row: 2/3;
-  }
-  .movie {
-    grid-column: 4/5;
-    grid-row: 3/4;
-  }
-  .rss {
-    grid-column: 4/5;
-    grid-row: 1/2;
-  }
-  .others {
-    grid-column: 3/4;
-    grid-row: 3/4;
+    grid-area: others;
   }
 }
