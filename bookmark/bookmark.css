@@ -83,10 +83,15 @@ a:visited {
   body {
     display: grid;
     grid:
-      "....... grbl    sns     rss     ......." max-content
-      "....... yahoo   twitter graphic ......." max-content
-      "....... google  others  movie   ......." max-content
-      / 1fr max-content max-content max-content 1fr;
+      "....... ....... ....... ....... ....... ......." 2em
+      "....... grbl    sns     movie   rss     ......." max-content
+      "....... ....... ....... ....... ....... ......." 2em
+      "....... google  twitter graphic others  ......." max-content
+      "....... ....... ....... ....... ....... ......." 2em
+      "....... yahoo   ....... ....... ....... ......." max-content
+      "....... ....... ....... ....... ....... ......." 1fr
+      / 1fr max-content max-content max-content max-content 1fr;
+      grid-column-gap: 2em;
   }
   .grbl {
     grid-area: grbl;
