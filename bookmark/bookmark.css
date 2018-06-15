@@ -137,7 +137,7 @@ a:visited {
       "....... yahoo   ....... ....... ....... ......." max-content
       "....... ....... ....... ....... ....... ......." 1fr
       / 1fr max-content max-content max-content max-content 1fr;
-      grid-column-gap: 2em;
+      grid-column-gap: 6em;
   }
   .grbl {
     grid-area: grbl;
