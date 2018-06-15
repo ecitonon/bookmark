@@ -79,6 +79,49 @@ a:visited {
   color: #fa5858;
 }
 
+@media (max-width: 1080px) {
+  body {
+    display: grid;
+    grid:
+      "....... ....... ....... ....... ....... ......." 2em
+      "....... grbl    sns     movie   rss     ......." max-content
+      "....... ....... ....... ....... ....... ......." 2em
+      "....... google  twitter graphic others  ......." max-content
+      "....... ....... ....... ....... ....... ......." 2em
+      "....... yahoo   ....... ....... ....... ......." max-content
+      "....... ....... ....... ....... ....... ......." 1fr
+      / 1fr max-content max-content max-content max-content 1fr;
+      grid-column-gap: 2em;
+  }
+  .grbl {
+    grid-area: grbl;
+  }
+  .sns {
+    grid-area: sns;
+  }
+  .twitter {
+    grid-area: twitter;
+  }
+  .google {
+    grid-area: google;
+  }
+  .yahoo {
+    grid-area: yahoo;
+  }
+  .graphic {
+    grid-area: graphic;
+  }
+  .movie {
+    grid-area: movie;
+  }
+  .rss {
+    grid-area: rss;
+  }
+  .others {
+    grid-area: others;
+  }
+}
+
 @media (min-width: 1081px) {
   body {
     display: grid;
