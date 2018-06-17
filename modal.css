@@ -1,0 +1,42 @@
+
+.modal-window {
+  display: none;
+  width: auto;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.modal-window:active {
+  display: block;
+}
+.modal-window:target {
+  display: block;
+}
+
+.modal-window .modal-inner {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  z-index: 90;
+}
+
+.modal-window .modal-close {
+  display: block;
+}
+.modal-window .modal-close::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 80;
+}
+.modal-window .modal-close::after {
+  content: "close";
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  z-index: 80;
+  background-color: #fff;
+}
