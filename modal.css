@@ -1,5 +1,11 @@
 
-#grbl-modal {
+#contents {
+  width: 100%;
+  padding: 10px 0 50px 0;
+  margin: 0 auto;
+}
+
+#grbl_modal {
   display: none;
   width: 100%;
   height: 100%;
@@ -34,17 +40,18 @@
   background: #fff;
 }
 
+
 @-webkit-keyframes modalFadeIn {
   0% {
     opacity: 0;
     display: block;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
  
-div.modal div:target {
+div#modal div:target {
   display:block;
   opacity: 1;
   -webkit-animation-name: modalFadeIn;
