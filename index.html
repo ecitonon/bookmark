@@ -20,26 +20,25 @@
   </head>
   <body>
     <section id="grbl">
-      <div id="contents">
-        <p><a href="#grbl_modal">GranblueFantasy</a></p>
-        <div id="modal">
-          <div id="grbl_modal">
-            <a href="#" class="close_overlay">×</a>
-            <div class="modal_window">
-              <ul>
-                <li><a href="http://granbluefantasy.jp/">公式</a></li>
-                <li><a href="http://game.granbluefantasy.jp/#top">Web版グランブルーファンタジー</a></li>
-                <!-- <li><a href="#" onclick="granbluefantasy_game(); return false;">Web版グランブルーファンタジー</a></li> -->
-                <li><a href="http://mirror.gbf-wiki.com/">グラブルwiki ミラー</a></li>
-                <li><a href="https://granblue.jp/">火力騎空士への道</a></li>
-                <li><a href="#" onclick="granbluefantasy_raidfinder(); return false;">raidfinder</a></li>
-                <li><a href="http://gbf-bbs.com/">グラブル騎空団募集掲示板</a></li>
-                <li><a href="https://prfac.com/gbf/summon/">フレ石編成的ななにか</a></li>
-                <li><a href="http://hsimyu.net/motocal/">元カレ計算機</a></li>
-              </ul>
-              <a href="#">CLOSE</a>
-            </div>
-          </div>
+      <input type="radio" name="grbl-modal" id="grbl-open"/>
+      <labl for="grbl-open">GranblueFantasy</label>
+      <input type="radio" name="grbl-modal" id="grbl-close_overlay"/>
+      <label for="grbl-close_overlay"></label>
+      <input type="radio" name="grbl-modal" id="grbl-close_button"/>
+      <label for="grbl-close_button">×</label>
+      <div class="grbl-modal_wrapper">
+        <div class="grbl-modal_contents">
+          <ul>
+            <li><a href="http://granbluefantasy.jp/">公式</a></li>
+            <li><a href="http://game.granbluefantasy.jp/#top">Web版グランブルーファンタジー</a></li>
+            <!-- <li><a href="#" onclick="granbluefantasy_game(); return false;">Web版グランブルーファンタジー</a></li> -->
+            <li><a href="http://mirror.gbf-wiki.com/">グラブルwiki ミラー</a></li>
+            <li><a href="https://granblue.jp/">火力騎空士への道</a></li>
+            <li><a href="#" onclick="granbluefantasy_raidfinder(); return false;">raidfinder</a></li>
+            <li><a href="http://gbf-bbs.com/">グラブル騎空団募集掲示板</a></li>
+            <li><a href="https://prfac.com/gbf/summon/">フレ石編成的ななにか</a></li>
+            <li><a href="http://hsimyu.net/motocal/">元カレ計算機</a></li>
+          </ul>
         </div>
       </div>
     </section>
