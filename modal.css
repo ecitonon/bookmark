@@ -51,7 +51,7 @@
   }
 }
  
-div#modal div:target {
+div#modal #grbl_modal:target {
   display:block;
   opacity: 1;
   -webkit-animation-name: modalFadeIn;
