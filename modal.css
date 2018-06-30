@@ -1,5 +1,5 @@
 
-.modal-wrapper,
+.grbl-modal_wrapper,
 input[name="grbl-modal"],
 #grbl-open + label ~ label {
   display: none;
@@ -9,35 +9,18 @@ input[name="grbl-modal"],
   cursor: pointer;
 }
 
-.grbl-modal_wrapper {
-  animation: fadeIn 1s ease 0s 1 normal;
-  -webkit-animation: fadeIn 1s ease 0s 1 normal;
-}
-#grbl-open:checked ~ #grbl-close_button + label{
-  animation: fadeIn 2s ease 0s 1 normal;
-  -webkit-animation: fadeIn 2s ease 0s 1 normal;
-}
-@keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-@-webkit-keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
 #grbl-open:checked + label ~ .grbl-modal_wrapper {
-  background: #fff;
   display: block;
   width: 90%;
   height: 80%;
   position: fixed;
   top: 50%;
   left: 50%;
+  z-index: 998;
+  background: #fff;
   transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
-  z-index: 998;
 }
 
 #grbl-open:checked + label ~ .grbl-modal_wrapper > .grbl-modal_contents {
@@ -49,32 +32,33 @@ input[name="grbl-modal"],
 }
 
 #grbl-open:checked + label + #grbl-close_overlay + label {
-  background: rgba(0, 0, 0, 0.70);
   display: block;
   width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  text-indent: 100%;
   z-index: 997;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.70);
+  overflow: hidden;
 }
 
 #grbl-open:checked ~ #grbl-close_button + label {
   display: block;
-  background: #fff;
-  text-align: center;
-  font-size: 25px;
-  line-height: 44px;
   width: 90%;
   height: 44px;
   position: fixed;
   bottom: 10%;
   left: 5%;
   z-index: 999;
+  font-size: 25px;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
 }
+
 #grbl-open:checked ~ #grbl-close_button + label::before {
   content: '×';
 }
@@ -84,8 +68,28 @@ input[name="grbl-modal"],
   font-size: 80%;
 }
 
+.grbl-modal_wrapper {
+  animation: fadeIn 1s ease 0s 1 normal;
+  -webkit-animation: fadeIn 1s ease 0s 1 normal;
+}
+#grbl-open:checked ~ #grbl-close_button + label{
+  animation: fadeIn 2s ease 0s 1 normal;
+  -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+/*@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}*/
+
+
+
+
 @media (min-width: 768px) {
-  #grbl-open:checked + label ~ .grbl-modal_wrapper {
+  /*#grbl-open:checked + label ~ .grbl-modal_wrapper {
     width: 600px;
     height: 600px;
   }
@@ -103,5 +107,5 @@ input[name="grbl-modal"],
   }
   #grbl-open:checked ~ #grbl-close_button + label::after {
     display: none;
-  }
+  }*/
 }
