@@ -1,60 +1,107 @@
 
-#contents {
-  width: 100%;
-  padding: 10px 0 50px 0;
-  margin: 0 auto;
-}
-
-#grbl_modal {
+.modal-wrapper,
+input[name="grbl-modal"],
+#grbl-open + label ~ label {
   display: none;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+}
+#grbl-open + label,
+#grbl-close_button + label {
+  cursor: pointer;
 }
 
-.close_overlay {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 5;
-  text-indent: -9999px;
-  background: #000;
-  opacity: 0.5;
+.grbl-modal_wrapper {
+  animation: fadeIn 1s ease 0s 1 normal;
+  -webkit-animation: fadeIn 1s ease 0s 1 normal;
+}
+#grbl-open:checked ~ #grbl-close_button + label{
+  animation: fadeIn 2s ease 0s 1 normal;
+  -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
-.modal_window {
+#grbl-open:checked + label ~ .grbl-modal_wrapper {
+  background: #fff;
   display: block;
-  width: 400px;
-  height: 300px;
-  margin: -150px 0 0 -200px;
-  position: absolute;
+  width: 90%;
+  height: 80%;
+  position: fixed;
   top: 50%;
   left: 50%;
-  z-index: 10;
-  text-align: center;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  z-index: 998;
+}
+
+#grbl-open:checked + label ~ .grbl-modal_wrapper > .grbl-modal_contents {
+  width: calc(100% - 40px);
+  height: calc(100% - 20px - 44px );
+  padding: 10px 20px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling:touch;
+}
+
+#grbl-open:checked + label + #grbl-close_overlay + label {
+  background: rgba(0, 0, 0, 0.70);
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 100%;
+  z-index: 997;
+}
+
+#grbl-open:checked ~ #grbl-close_button + label {
+  display: block;
   background: #fff;
+  text-align: center;
+  font-size: 25px;
+  line-height: 44px;
+  width: 90%;
+  height: 44px;
+  position: fixed;
+  bottom: 10%;
+  left: 5%;
+  z-index: 999;
+}
+#grbl-open:checked ~ #grbl-close_button + label::before {
+  content: '×';
+}
+#grbl-open:checked ~ #grbl-close_button + label::after {
+  content: 'CLOSE';
+  margin-left: 5px;
+  font-size: 80%;
 }
 
-
-@-webkit-keyframes modalFadeIn {
-  0% {
-    opacity: 0;
-    display: block;
+@media (min-width: 768px) {
+  #grbl-open:checked + label ~ .grbl-modal_wrapper {
+    width: 600px;
+    height: 600px;
   }
-  100% {
-    opacity: 1;
+  #grbl-open:checked + label ~ .grbl-modal_wrapper > .grbl-modal_contents {
+    height: calc(100% - 20px);
   }
-}
- 
-div#modal #grbl_modal:target {
-  display:block;
-  opacity: 1;
-  -webkit-animation-name: modalFadeIn;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-iteration-count: 1;
+  #grbl-open:checked ~ #grbl-close_button + label {
+    width: 44px;
+    height: 44px;
+    left: 50%;
+    top: 50%;
+    margin-left: 240px;
+    margin-top: -285px;
+    overflow: hidden;
+  }
+  #grbl-open:checked ~ #grbl-close_button + label::after {
+    display: none;
+  }
 }
