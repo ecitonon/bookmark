@@ -16,7 +16,7 @@ input[name="modal_sw"],
 #open:checked ~ #close_button + label {
   animation : fadeIn 2s ease 0s 1 normal;
 }
-@keframes fadeIn {
+@keyframes fadeIn {
   0% {
     opacity: 0;
   }
@@ -27,19 +27,19 @@ input[name="modal_sw"],
 
 #open:checked + label ~ .modal_wrapper {
   display: block;
-  width: 90%;
+  width: 30%;
   height: 80%;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 998;
-  background: #fff;
+  border: 2px solid #000;
+  background: #2E2E2E;
 }
 #open:checked + label ~ .modal_wrapper > .modal_contents {
-  width: calc(100% - 40px);
-  height: calc(100% - 20px - 44px);
-  padding: 10px 20px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
   overflow-y: auto;
 }
 #open:checked + label ~ #close_overlay {
@@ -51,30 +51,19 @@ input[name="modal_sw"],
   left: 0;
   z-index: 997;
   overflow: hidden;
-  white-space: nowrap;
-  text-indent: 100%;
-  background: rbga(0, 0, 0, 0);
+  background: #000;
 }
-
 #open:checked ~ #close_button + label {
   display: block;
-  width: 90%;
-  height: 44px;
+  width: 2em;
+  height: 2em;
   position: fixed;
-  bottom: 10%;
-  left: 5%;
+  top: 5%;
+  right: 5%;
   z-index: 999;
-  font-size: 25px;
+  font-size: 2em;
   text-align: center;
-  line-height: 44px;
+  line-height: 1.8em;
   background: #fff;
-}
-
-#open:checked ~ #close_button + label::before {
-  content: "×";
-}
-#open:checked ~ #close_button + label::after {
-  content: "close";
-  margin-left: 5px;
-  font-size: 80%;
+  border-radius: 50%;
 }
