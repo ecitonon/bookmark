@@ -1,37 +1,48 @@
 
-.grbl-modal_wrapper,
-input[name="grbl-modal"],
-#grbl-open + label ~ label {
+.modal_wrapper,
+input[name="modal_sw"],
+#open + label ~ label {
   display: none;
 }
-#grbl-open + label,
-#grbl-close_button + label {
+
+#open + label,
+#close_button + label {
   cursor: pointer;
 }
 
-#grbl-open:checked + label ~ .grbl-modal_wrapper {
+.modal_wrapper {
+  animation: fadeIn 1s ease 0s 1 normal;
+}
+#open:checked ~ #close_button + label {
+  animation : fadeIn 2s ease 0s 1 normal;
+}
+@keframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#open:checked + label ~ .modal_wrapper {
   display: block;
   width: 90%;
   height: 80%;
   position: fixed;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 998;
   background: #fff;
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
 }
-
-#grbl-open:checked + label ~ .grbl-modal_wrapper > .grbl-modal_contents {
+#open:checked + label ~ .modal_wrapper > .modal_contents {
   width: calc(100% - 40px);
-  height: calc(100% - 20px - 44px );
+  height: calc(100% - 20px - 44px);
   padding: 10px 20px;
   overflow-y: auto;
-  -webkit-overflow-scrolling:touch;
 }
-
-#grbl-open:checked + label + #grbl-close_overlay + label {
+#open:checked + label ~ #close_overlay {
   display: block;
   width: 100%;
   height: 100%;
@@ -39,13 +50,13 @@ input[name="grbl-modal"],
   top: 0;
   left: 0;
   z-index: 997;
-  text-indent: 100%;
-  white-space: nowrap;
-  background: rgba(0, 0, 0, 0.70);
   overflow: hidden;
+  white-space: nowrap;
+  text-indent: 100%;
+  background: rbga(0, 0, 0, 0);
 }
 
-#grbl-open:checked ~ #grbl-close_button + label {
+#open:checked ~ #close_button + label {
   display: block;
   width: 90%;
   height: 44px;
@@ -59,53 +70,11 @@ input[name="grbl-modal"],
   background: #fff;
 }
 
-#grbl-open:checked ~ #grbl-close_button + label::before {
-  content: '×';
+#open:checked ~ #close_button + label::before {
+  content: "×";
 }
-#grbl-open:checked ~ #grbl-close_button + label::after {
-  content: 'CLOSE';
+#open:checked ~ #close_button + label::after {
+  content: "close";
   margin-left: 5px;
   font-size: 80%;
-}
-
-.grbl-modal_wrapper {
-  animation: fadeIn 1s ease 0s 1 normal;
-  -webkit-animation: fadeIn 1s ease 0s 1 normal;
-}
-#grbl-open:checked ~ #grbl-close_button + label{
-  animation: fadeIn 2s ease 0s 1 normal;
-  -webkit-animation: fadeIn 2s ease 0s 1 normal;
-}
-/*@keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-@-webkit-keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}*/
-
-
-
-
-@media (min-width: 768px) {
-  /*#grbl-open:checked + label ~ .grbl-modal_wrapper {
-    width: 600px;
-    height: 600px;
-  }
-  #grbl-open:checked + label ~ .grbl-modal_wrapper > .grbl-modal_contents {
-    height: calc(100% - 20px);
-  }
-  #grbl-open:checked ~ #grbl-close_button + label {
-    width: 44px;
-    height: 44px;
-    left: 50%;
-    top: 50%;
-    margin-left: 240px;
-    margin-top: -285px;
-    overflow: hidden;
-  }
-  #grbl-open:checked ~ #grbl-close_button + label::after {
-    display: none;
-  }*/
 }
