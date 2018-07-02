@@ -1,31 +1,16 @@
 
 .modal_wrapper,
 input[name="modal_sw"],
-#open + label ~ label {
+#grbl-open + label ~ label {
   display: none;
 }
-
-#open + label,
-#close_button + label {
+#grbl-open + label,
+#grbl-close_button + label {
   cursor: pointer;
 }
 
-.modal_wrapper {
-  animation: fadeIn 1s ease 0s 1 normal;
-}
-#open:checked ~ #close_button + label {
-  animation : fadeIn 2s ease 0s 1 normal;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-#open:checked + label ~ .modal_wrapper {
+/*** checked ***/
+#grbl-open:checked + label ~ .modal_wrapper {
   display: block;
   width: 30%;
   height: 80%;
@@ -37,12 +22,12 @@ input[name="modal_sw"],
   border: 2px solid #000;
   background: #2E2E2E;
 }
-#open:checked + label ~ .modal_wrapper > .modal_contents {
+#grbl-open:checked + label ~ .modal_wrapper > .modal_contents {
   width: calc(100% - 4px);
   height: calc(100% - 4px);
   overflow-y: auto;
 }
-#open:checked + label ~ #close_overlay + label {
+#grbl-open:checked + label ~ #grbl-close_overlay + label {
   display: block;
   width: 100%;
   height: 100%;
@@ -53,9 +38,9 @@ input[name="modal_sw"],
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background: #000;
+  background: rgba(128, 128, 128, 0.4);
 }
-#open:checked ~ #close_button + label {
+#grbl-open:checked ~ #grbl-close_button + label {
   display: block;
   width: 2em;
   height: 2em;
@@ -68,4 +53,20 @@ input[name="modal_sw"],
   line-height: 1.8em;
   background: #fff;
   border-radius: 50%;
+}
+
+/*** animation ***/
+.modal_wrapper {
+  animation: fadeIn 1s ease 0s 1 normal;
+}
+#grbl-open:checked ~ #grbl-close_button + label {
+  animation : fadeIn 2s ease 0s 1 normal;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
