@@ -42,7 +42,7 @@ input[name="modal_sw"],
   height: calc(100% - 4px);
   overflow-y: auto;
 }
-#open:checked + label ~ #close_overlay {
+#open:checked + label ~ #close_overlay + label {
   display: block;
   width: 100%;
   height: 100%;
@@ -50,6 +50,8 @@ input[name="modal_sw"],
   top: 0;
   left: 0;
   z-index: 997;
+  text-indent: 100%;
+  white-space: nowrap;
   overflow: hidden;
   background: #000;
 }
