@@ -1,7 +1,7 @@
 
 /* @author ecitonon */
-* {
-  background-color: #2E2E2E;
+body {
+  background: linear-gradient(to bottom, #3eb370, #007b43);
 }
 h1 {
   color: #fff;
@@ -92,6 +92,14 @@ a:visited {
   }
   #grbl {
     grid-area: grbl;
+    display: block;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    line-height: 250px;
+    border: 1px solid #0068b7;
+    border-radius: 10%;
+    background-color: #a0d8ef;
   }
   .sns {
     grid-area: sns;
@@ -116,5 +124,12 @@ a:visited {
   }
   .others {
     grid-area: others;
+  }
+
+  #grbl-open + label {
+    color: #000;
+    font-size: 150%;
+    font-weight: bold;
+    background-color: #a0d8ef;
   }
 }
