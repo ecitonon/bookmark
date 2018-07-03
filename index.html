@@ -42,90 +42,162 @@
         </div>
       </div>
     </section>
-    <section class="sns">
-      <h1>SNS</h1>
-      <ul>
-        <li><a href="https://discordapp.com/">Discord</a></li>
-        <li><a href="http://ja-jp.facebook.com/">Facebook</a></li>
-        <li><a href="#" onclick="mstdn_jp(); return false;">mstdn.jp</a></li>
-        <li><a href="#" onclick="mstdn_workers(); return false;">mstdn-workers.com</a></li>
-        <li><a href="https://www.pixiv.net/">Pixiv</a></li>
-        <li><a href="https://soundcloud.com/">SoundCloud</a></li>
-        <li><a href="#" onclick="plug_dj(); return false;">スナックへるつ＠Plug.dj</a></li>
-        <li><a href="http://hatenablog.com/">はてなブログ</a></li>
-      </ul>
+    <section id="sns">
+      <input type="radio" name="modal_sw" id="sns-open"/>
+      <label for="sns-open">SNS</label>
+      <input type="radio" name="modal_sw" id="sns-close_overlay"/>
+      <label for="sns-close_overlay"></label>
+      <input type="radio" name="modal_sw" id="sns-close_button"/>
+      <label for="sns-close_button">×</label>
+      <div class="modal_wrapper">
+        <div class="modal_contents">
+          <ul>
+            <li><a href="https://discordapp.com/">Discord</a></li>
+            <li><a href="http://ja-jp.facebook.com/">Facebook</a></li>
+            <li><a href="#" onclick="mstdn_jp(); return false;">mstdn.jp</a></li>
+            <li><a href="#" onclick="mstdn_workers(); return false;">mstdn-workers.com</a></li>
+            <li><a href="https://www.pixiv.net/">Pixiv</a></li>
+            <li><a href="https://soundcloud.com/">SoundCloud</a></li>
+            <li><a href="#" onclick="plug_dj(); return false;">スナックへるつ＠Plug.dj</a></li>
+            <li><a href="http://hatenablog.com/">はてなブログ</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <section class="twitter">
-      <h1>Twitter</h1>
-      <ul>
-        <li><a href="http://twitter.com/">Twitter</a></li>
-        <li><a href="http://zoi.herokuapp.com/">zoi</a></li>
-        <li><a href="http://shindanmaker.com/235254">今夜が山のようです</a></li>
-      </ul>
+    <section id="twitter">
+      <input type="radio" name="modal_sw" id="twitter-open"/>
+      <label for="twitter-open">Twitter</label>
+      <input type="radio" name="modal_sw" id="twitter-close_overlay"/>
+      <label for="twitter-close_overlay"></label>
+      <input type="radio" name="modal_sw" id="twitter-close_button"/>
+      <label for="twitter-close_button">×</label>
+      <div class="modal_wrapper">
+        <div class="modal_contents">
+          <ul>
+            <li><a href="http://twitter.com/">Twitter</a></li>
+            <li><a href="http://zoi.herokuapp.com/">zoi</a></li>
+            <li><a href="http://shindanmaker.com/235254">今夜が山のようです</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <section class="google">
-      <h1>Google</h1>
-      <ul>
-        <li><a href="http://www.google.co.jp/">Google</a></li>
-        <li><a href="https://calendar.google.com/calendar/">GoogleCalendar</a></li>
-        <li><a href="https://www.google.co.jp/maps/">GoogleMap</a></li>
-        <li><a href="https://play.google.com/store">GooglePlay</a></li>
-        <li><a href="https://docs.google.com/spreadsheets/">GoogleSpreadSheets</a></li>
-        <li><a href="https://translate.google.co.jp/">Google翻訳</a></li>
-      </ul>
+    <section id="google">
+      <input type="radio" name="modal_sw" id="google-open"/>
+      <label for="google-open">Google</label>
+      <input type="radio" name="modal_sw" id="google-close_overlay"/>
+      <label for="google-close_overlay"></label>
+      <input type="radio" name="modal_sw" id="google-close_button"/>
+      <label for="google-close_button">×</label>
+      <div class="modal_wrapper">
+        <div class="modal_contents">
+          <ul>
+            <li><a href="http://www.google.co.jp/">Google</a></li>
+            <li><a href="https://calendar.google.com/calendar/">GoogleCalendar</a></li>
+            <li><a href="https://www.google.co.jp/maps/">GoogleMap</a></li>
+            <li><a href="https://play.google.com/store">GooglePlay</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/">GoogleSpreadSheets</a></li>
+            <li><a href="https://translate.google.co.jp/">Google翻訳</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <section class="yahoo">
-      <h1>Yahoo!</h1>
-      <ul>
-        <li><a href="http://www.yahoo.co.jp/">Yahoo! Japan</a></li>
-        <li><a href="https://weather.yahoo.co.jp/weather/jp/3.html?day=1">Yahoo! 天気(関東)</a></li>
-        <li><a href="https://transit.yahoo.co.jp/">Yahoo! 乗換案内</a></li>
-        <li><a href="https://transit.yahoo.co.jp/traininfo/area/4/">Yahoo! 路線情報(関東)</a></li>
-      </ul>
+    <section id="yahoo">
+      <input type="radio" name="modal_sw" id="yahoo-open"/>
+      <label for="yahoo-open">Yahoo</label>
+      <input type="radio" name="modal_sw" id="yahoo-close_overlay"/>
+      <label for="yahoo-close_overlay"></label>
+      <input type="radio" name="modal_sw" id="yahoo-close_button"/>
+      <label for="yahoo-close_button">×</label>
+      <div class="modal_wrapper">
+        <div class="modal_contents">
+          <ul>
+            <li><a href="http://www.yahoo.co.jp/">Yahoo! Japan</a></li>
+            <li><a href="https://weather.yahoo.co.jp/weather/jp/3.html?day=1">Yahoo! 天気(関東)</a></li>
+            <li><a href="https://transit.yahoo.co.jp/">Yahoo! 乗換案内</a></li>
+            <li><a href="https://transit.yahoo.co.jp/traininfo/area/4/">Yahoo! 路線情報(関東)</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <section class="rss">
-      <h1>RSS</h1>
-      <ul>
-        <li><a href="http://japanese.engadget.com/">Engadget</a></li>
-        <li><a href="http://gigazine.net/">GIGAZINE</a></li>
-        <li><a href="http://www.gizmodo.jp/">Gizmodo</a></li>
-        <li><a href="http://www.lifehacker.jp/">LifeHacker</a></li>
-        <li><a href="http://jp.techcrunch.com/">TechCrunch</a></li>
-        <li><a href="http://nlab.itmedia.co.jp/">ねとらぼ</a></li>
-        <li><a href="http://www.po-kaki-to.com/">ポッカキット</a></li>
-      </ul>
+    <section id="rss">
+      <input type="radio" name="modal_sw" id="rss-open"/>
+      <label for="rss-open">RSS</label>
+      <input type="radio" name="modal_sw" id="rss-close_overlay"/>
+      <label for="rss-close_overlay"></label>
+      <input type="radio" name="modal_sw" id="rss-close_button"/>
+      <label for="rss-close_button">×</label>
+      <div class="modal_wrapper">
+        <div class="modal_contents">
+          <ul>
+            <li><a href="http://japanese.engadget.com/">Engadget</a></li>
+            <li><a href="http://gigazine.net/">GIGAZINE</a></li>
+            <li><a href="http://www.gizmodo.jp/">Gizmodo</a></li>
+            <li><a href="http://www.lifehacker.jp/">LifeHacker</a></li>
+            <li><a href="http://jp.techcrunch.com/">TechCrunch</a></li>
+            <li><a href="http://nlab.itmedia.co.jp/">ねとらぼ</a></li>
+            <li><a href="http://www.po-kaki-to.com/">ポッカキット</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <section class="graphic">
-      <h1>Graphic</h1>
-      <ul>
-        <li><a href="https://danbooru.donmai.us/">Danboru</a></li>
-        <li><a href="http://idol.sankakucomplex.com/">Idol Complex</a></li>
-        <li><a href="http://chan.sankakucomplex.com/">Sankaku Complex</a></li>
-        <li><a href="https://www.pinterest.jp/">Pinterest</a></li>
-      </ul>
+    <section id="graphic">
+      <input type="radio" name="modal_sw" id="graphic-open"/>
+      <label for="graphic-open">Graphic</label>
+      <input type="radio" name="modal_sw" id="graphic-close_overlay"/>
+      <label for="graphic-close_overlay"></label>
+      <input type="radio" name="modal_sw" id="graphic-close_button"/>
+      <label for="graphic-close_button">×</label>
+      <div class="modal_wrapper">
+        <div class="modal_contents">
+          <ul>
+            <li><a href="https://danbooru.donmai.us/">Danboru</a></li>
+            <li><a href="http://idol.sankakucomplex.com/">Idol Complex</a></li>
+            <li><a href="http://chan.sankakucomplex.com/">Sankaku Complex</a></li>
+            <li><a href="https://www.pinterest.jp/">Pinterest</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <section class="movie">
-      <h1>Movie</h1>
-      <ul>
-        <li><a href="https://www.amazon.co.jp/Prime-Video/b/ref=nav__aiv_piv?ie=UTF8&node=3535604051">AmazonPrimeVideo</a></li>
-        <li><a href="http://www.hulu.jp/">Hulu</a></li>
-        <li><a href="https://www.netflix.com/jp/">NetFlix</a></li>
-        <li><a href="http://www.b-ch.com/">バンダイチャンネル</a></li>
-        <li><a href="https://www.youtube.com/">YouTube</a></li>
-        <li><a href="http://www.nicovideo.jp/">ニコニコ動画</a></li>
-      </ul>
+    <section id="movie">
+      <input type="radio" name="modal_sw" id="movie-open"/>
+      <label for="movie-open">Movie</label>
+      <input type="radio" name="modal_sw" id="movie-close_overlay"/>
+      <label for="movie-close_overlay"></label>
+      <input type="radio" name="modal_sw" id="movie-close_button"/>
+      <label for="movie-close_button">×</label>
+      <div class="modal_wrapper">
+        <div class="modal_contents">
+          <ul>
+            <li><a href="https://www.amazon.co.jp/Prime-Video/b/ref=nav__aiv_piv?ie=UTF8&node=3535604051">AmazonPrimeVideo</a></li>
+            <li><a href="http://www.hulu.jp/">Hulu</a></li>
+            <li><a href="https://www.netflix.com/jp/">NetFlix</a></li>
+            <li><a href="http://www.b-ch.com/">バンダイチャンネル</a></li>
+            <li><a href="https://www.youtube.com/">YouTube</a></li>
+            <li><a href="http://www.nicovideo.jp/">ニコニコ動画</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <section class="others">
-      <h1>Others</h1>
-      <ul>
-        <li><a href="http://www.amazon.co.jp/">Amazon.co.jp</a></li>
-        <li><a href="http://www.fliptitle.com/">FlipTitle</a></li>
-        <li><a href="https://www.office.com/?omkt=ja-jp">Office365</a></li>
-        <li><a href="https://www.instapaper.com/u">Instapaper</a></li>
-        <li><a href="http://getpocket.com/">Pocket</a></li>
-        <li><a href="#" onclick="others_24hoursofhappy(); return false;">24hoursofhappy</a></li>
-        <li><a href="http://uzurainfo.han-be.com/">うずらインフォ</a></li>
-      </ul>
+    <section id="others">
+      <input type="radio" name="modal_sw" id="others-open"/>
+      <label for="others-open">Others</label>
+      <input type="radio" name="modal_sw" id="others-close_overlay"/>
+      <label for="others-close_overlay"></label>
+      <input type="radio" name="modal_sw" id="others-close_button"/>
+      <label for="others-close_button">×</label>
+      <div class="modal_wrapper">
+        <div class="modal_contents">
+          <ul>
+            <li><a href="http://www.amazon.co.jp/">Amazon.co.jp</a></li>
+            <li><a href="http://www.fliptitle.com/">FlipTitle</a></li>
+            <li><a href="https://www.office.com/?omkt=ja-jp">Office365</a></li>
+            <li><a href="https://www.instapaper.com/u">Instapaper</a></li>
+            <li><a href="http://getpocket.com/">Pocket</a></li>
+            <li><a href="#" onclick="others_24hoursofhappy(); return false;">24hoursofhappy</a></li>
+            <li><a href="http://uzurainfo.han-be.com/">うずらインフォ</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
   </body>
 </html>

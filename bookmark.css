@@ -1,6 +1,8 @@
 
 /* @author ecitonon */
 body {
+  width: 100vw;
+  height: 100vh;
   background: linear-gradient(to bottom, #3eb370, #007b43);
 }
 h1 {
@@ -101,29 +103,93 @@ a:visited {
     border-radius: 10%;
     background-color: #a0d8ef;
   }
-  .sns {
+  #sns {
     grid-area: sns;
+    display: block;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    line-height: 250px;
+    border: 1px solid #0068b7;
+    border-radius: 10%;
+    background-color: #a0d8ef;
   }
-  .twitter {
+  #twitter {
     grid-area: twitter;
+    display: block;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    line-height: 250px;
+    border: 1px solid #0068b7;
+    border-radius: 10%;
+    background-color: #a0d8ef;
   }
-  .google {
+  #google {
     grid-area: google;
+    display: block;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    line-height: 250px;
+    border: 1px solid #0068b7;
+    border-radius: 10%;
+    background-color: #a0d8ef;
   }
-  .yahoo {
+  #yahoo {
     grid-area: yahoo;
+    display: block;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    line-height: 250px;
+    border: 1px solid #0068b7;
+    border-radius: 10%;
+    background-color: #a0d8ef;
   }
-  .graphic {
+  #graphic {
     grid-area: graphic;
+    display: block;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    line-height: 250px;
+    border: 1px solid #0068b7;
+    border-radius: 10%;
+    background-color: #a0d8ef;
   }
-  .movie {
+  #movie {
     grid-area: movie;
+    display: block;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    line-height: 250px;
+    border: 1px solid #0068b7;
+    border-radius: 10%;
+    background-color: #a0d8ef;
   }
-  .rss {
+  #rss {
     grid-area: rss;
+    display: block;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    line-height: 250px;
+    border: 1px solid #0068b7;
+    border-radius: 10%;
+    background-color: #a0d8ef;
   }
-  .others {
+  #others {
     grid-area: others;
+    display: block;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    line-height: 250px;
+    border: 1px solid #0068b7;
+    border-radius: 10%;
+    background-color: #a0d8ef;
   }
 
   #grbl-open + label {
