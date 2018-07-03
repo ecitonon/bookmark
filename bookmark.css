@@ -90,7 +90,7 @@ a:visited {
       "....... yahoo   ....... ....... ....... ......." max-content
       "....... ....... ....... ....... ....... ......." 1fr
       / 1fr max-content max-content max-content max-content 1fr;
-      grid-column-gap: 6em;
+      grid-column-gap: 2em;
   }
   #grbl {
     grid-area: grbl;
@@ -193,6 +193,54 @@ a:visited {
   }
 
   #grbl-open + label {
+    color: #000;
+    font-size: 150%;
+    font-weight: bold;
+    background-color: #a0d8ef;
+  }
+  #sns-open + label {
+    color: #000;
+    font-size: 150%;
+    font-weight: bold;
+    background-color: #a0d8ef;
+  }
+  #movie-open + label {
+    color: #000;
+    font-size: 150%;
+    font-weight: bold;
+    background-color: #a0d8ef;
+  }
+  #rss-open + label {
+    color: #000;
+    font-size: 150%;
+    font-weight: bold;
+    background-color: #a0d8ef;
+  }
+  #google-open + label {
+    color: #000;
+    font-size: 150%;
+    font-weight: bold;
+    background-color: #a0d8ef;
+  }
+  #twitter-open + label {
+    color: #000;
+    font-size: 150%;
+    font-weight: bold;
+    background-color: #a0d8ef;
+  }
+  #graphic-open + label {
+    color: #000;
+    font-size: 150%;
+    font-weight: bold;
+    background-color: #a0d8ef;
+  }
+  #others-open + label {
+    color: #000;
+    font-size: 150%;
+    font-weight: bold;
+    background-color: #a0d8ef;
+  }
+  #yahoo-open + label {
     color: #000;
     font-size: 150%;
     font-weight: bold;

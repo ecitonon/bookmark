@@ -1,16 +1,48 @@
 
 .modal_wrapper,
 input[name="modal_sw"],
-#grbl-open + label ~ label {
+#grbl-open + label ~ label,
+#sns-open + label ~ label,
+#movie-open + label ~ label,
+#rss-open + label ~ label,
+#google-open + label ~ label,
+#twitter-open + label ~ label,
+#graphic-open + label ~ label,
+#others-open + label ~ label,
+#yahoo-open + label ~ label {
   display: none;
 }
 #grbl-open + label,
-#grbl-close_button + label {
+#grbl-close_button + label,
+#sns-open + label,
+#sns-close_button + label,
+#movie-open + label,
+#movie-close_button + label,
+#rss-open + label,
+#rss-close_button + label,
+#google-open + label,
+#google-close_button + label,
+#twitter-open + label,
+#twitter-close_button + label,
+#graphic-open + label,
+#graphic-close_button + label,
+#others-open + label,
+#others-close_button + label,
+#yahoo-open + label,
+#yahoo-close_button + label {
   cursor: pointer;
 }
 
 /*** checked ***/
-#grbl-open:checked + label ~ .modal_wrapper {
+#grbl-open:checked + label ~ .modal_wrapper,
+#sns-open:checked + label ~ .modal_wrapper,
+#movie-open:checked + label ~ .modal_wrapper,
+#rss-open:checked + label ~ .modal_wrapper,
+#google-open:checked + label ~ .modal_wrapper,
+#twitter-open:checked + label ~ .modal_wrapper,
+#graphic-open:checked + label ~ .modal_wrapper,
+#others-open:checked + label ~ .modal_wrapper,
+#yahoo-open:checked + label ~ .modal_wrapper {
   display: block;
   width: 30%;
   height: 80%;
@@ -22,12 +54,28 @@ input[name="modal_sw"],
   border: 2px solid #000;
   background: #2E2E2E;
 }
-#grbl-open:checked + label ~ .modal_wrapper > .modal_contents {
+#grbl-open:checked + label ~ .modal_wrapper > .modal_contents,
+#sns-open:checked + label ~ .modal_wrapper > .modal_contents,
+#movie-open:checked + label ~ .modal_wrapper > .modal_contents,
+#rss-open:checked + label ~ .modal_wrapper > .modal_contents,
+#google-open:checked + label ~ .modal_wrapper > .modal_contents,
+#twitter-open:checked + label ~ .modal_wrapper > .modal_contents,
+#graphic-open:checked + label ~ .modal_wrapper > .modal_contents,
+#others-open:checked + label ~ .modal_wrapper > .modal_contents,
+#yahoo-open:checked + label ~ .modal_wrapper > .modal_contents {
   width: calc(100% - 4px);
   height: calc(100% - 4px);
   overflow-y: auto;
 }
-#grbl-open:checked + label ~ #grbl-close_overlay + label {
+#grbl-open:checked + label ~ #grbl-close_overlay + label,
+#sns-open:checked + label ~ #sns-close_overlay + label,
+#movie-open:checked + label ~ #movie-close_overlay + label,
+#rss-open:checked + label ~ #rss-close_overlay + label,
+#google-open:checked + label ~ #google-close_overlay + label,
+#twitter-open:checked + label ~ #twitter-close_overlay + label,
+#graphic-open:checked + label ~ #graphic-close_overlay + label,
+#others-open:checked + label ~ #others-close_overlay + label,
+#yahoo-open:checked + label ~ #yahoo-close_overlay + label {
   display: block;
   width: 100%;
   height: 100%;
@@ -40,7 +88,15 @@ input[name="modal_sw"],
   overflow: hidden;
   background: rgba(128, 128, 128, 0.4);
 }
-#grbl-open:checked ~ #grbl-close_button + label {
+#grbl-open:checked ~ #grbl-close_button + label,
+#sns-open:checked ~ #sns-close_button + label,
+#movie-open:checked ~ #movie-close_button + label,
+#rss-open:checked ~ #rss-close_button + label,
+#google-open:checked ~ #google-close_button + label,
+#twitter-open:checked ~ #twitter-close_button + label,
+#graphic-open:checked ~ #graphic-close_button + label,
+#others-open:checked ~ #others-close_button + label,
+#yahoo-open:checked ~ #yahoo-close_button + label {
   display: block;
   width: 2em;
   height: 2em;
@@ -59,7 +115,15 @@ input[name="modal_sw"],
 .modal_wrapper {
   animation: fadeIn 1s ease 0s 1 normal;
 }
-#grbl-open:checked ~ #grbl-close_button + label {
+#grbl-open:checked ~ #grbl-close_button + label,
+#sns-open:checked ~ #sns-close_button + label,
+#movie-open:checked ~ #movie-close_button + label,
+#rss-open:checked ~ #rss-close_button + label,
+#google-open:checked ~ #google-close_button + label,
+#twitter-open:checked ~ #twitter-close_button + label,
+#graphic-open:checked ~ #graphic-close_button + label,
+#others-open:checked ~ #others-close_button + label,
+#yahoo-open:checked ~ #yahoo-close_button + label {
   animation : fadeIn 2s ease 0s 1 normal;
 }
 @keyframes fadeIn {
