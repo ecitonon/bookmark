@@ -112,6 +112,9 @@ a:visited {
     line-height: 250px;
     border: 1px solid #0068b7;
     border-radius: 10%;
+    background-image: url(images/network_people_connection.png);
+    background-size: 250px 250px;
+    background-repeat: no-repeat;
     background-color: #a0d8ef;
   }
   #twitter {
@@ -137,18 +140,24 @@ a:visited {
     line-height: 250px;
     border: 1px solid #0068b7;
     border-radius: 10%;
+    background-image: url(images/search_mushimegane.png);
+    background-size: 250px 250px;
+    background-repeat: no-repeat;
     background-color: #a0d8ef;
   }
   #yahoo {
     grid-area: yahoo;
     display: block;
     width: 250px;
-    height: 250px;
+    height: 240px;
+    padding-top: 10px;
     text-align: center;
-    line-height: 250px;
     border: 1px solid #0068b7;
     border-radius: 10%;
-    background-color: #a0d8ef;
+    background-image: url(images/computer_search_kensaku.png);
+    background-size: 250px 250px;
+    background-repeat: no-repeat;
+    background-color: #fff;
   }
   #graphic {
     grid-area: graphic;
@@ -159,6 +168,9 @@ a:visited {
     line-height: 250px;
     border: 1px solid #0068b7;
     border-radius: 10%;
+    background-image: url(images/otaku.png);
+    background-size: 250px 250px;
+    background-repeat: no-repeat;
     background-color: #a0d8ef;
   }
   #movie {
@@ -170,6 +182,9 @@ a:visited {
     line-height: 250px;
     border: 1px solid #0068b7;
     border-radius: 10%;
+    background-image: url(images/otaku.png);
+    background-size: 250px 250px;
+    background-repeat: no-repeat;
     background-color: #a0d8ef;
   }
   #rss {
@@ -199,53 +214,53 @@ a:visited {
     color: #000;
     font-size: 150%;
     font-weight: bold;
-    background-color: #a0d8ef;
   }
   #sns-open + label {
     color: #000;
-    font-size: 150%;
+    font-size: 300%;
     font-weight: bold;
-    background-color: #a0d8ef;
   }
   #movie-open + label {
-    color: #000;
-    font-size: 150%;
+    color: #fff;
+    font-size: 300%;
     font-weight: bold;
-    background-color: #a0d8ef;
+    text-shadow: 2px 2px 0 #000,
+                 2px -2px 0 #000,
+                 -2px 2px 0 #000,
+                 -2px -2px 0 #000;
   }
   #rss-open + label {
     color: #000;
-    font-size: 150%;
+    font-size: 300%;
     font-weight: bold;
-    background-color: #a0d8ef;
   }
   #google-open + label {
     color: #000;
-    font-size: 150%;
+    font-size: 300%;
     font-weight: bold;
-    background-color: #a0d8ef;
   }
   #twitter-open + label {
     color: #000;
-    font-size: 200%;
+    font-size: 300%;
     font-weight: bold;
   }
   #graphic-open + label {
-    color: #000;
-    font-size: 150%;
+    color: #fff;
+    font-size: 300%;
     font-weight: bold;
-    background-color: #a0d8ef;
+    text-shadow: 2px 2px 0 #000,
+                 2px -2px 0 #000,
+                 -2px 2px 0 #000,
+                 -2px -2px 0 #000;
   }
   #others-open + label {
     color: #000;
-    font-size: 150%;
+    font-size: 300%;
     font-weight: bold;
-    background-color: #a0d8ef;
   }
   #yahoo-open + label {
-    color: #000;
-    font-size: 150%;
+    color: #f00;
+    font-size: 300%;
     font-weight: bold;
-    background-color: #a0d8ef;
   }
 }
