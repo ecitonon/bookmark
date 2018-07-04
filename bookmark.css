@@ -118,11 +118,14 @@ a:visited {
     grid-area: twitter;
     display: block;
     width: 250px;
-    height: 250px;
+    height: 240px;
+    padding-top: 10px;
     text-align: center;
-    line-height: 250px;
     border: 1px solid #0068b7;
     border-radius: 10%;
+    background-image: url(images/bird_aoitori_bluebird.png);
+    background-size: 250px 250px;
+    background-repeat: no-repeat;
     background-color: #a0d8ef;
   }
   #google {
@@ -224,9 +227,8 @@ a:visited {
   }
   #twitter-open + label {
     color: #000;
-    font-size: 150%;
+    font-size: 200%;
     font-weight: bold;
-    background-color: #a0d8ef;
   }
   #graphic-open + label {
     color: #000;
