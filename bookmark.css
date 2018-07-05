@@ -23,240 +23,194 @@ a:visited {
   color: #fa5858;
 }
 
-@media (max-width: 1080px) {
-  body {
-    display: grid;
-    grid:
-      "....... ....... ....... ....... ......." 5em
-      "....... grbl    ....... sns     ......." max-content
-      "....... ....... ....... ....... ......." 2em
-      "....... yahoo   ....... twitter ......." max-content
-      "....... ....... ....... ....... ......." 2em
-      "....... google  ....... movie   ......." max-content
-      "....... ....... ....... ....... ......." 2em
-      "....... rss     ....... graphic ......." max-content
-      "....... ....... ....... ....... ......." 2em
-      "....... others  ....... ....... ......." max-content
-      "....... ....... ....... ....... ......." 1fr
-      / 1fr max-content 1fr max-content 1fr;
-  }
-  .grbl {
-    grid-area: grbl;
-  }
-  .sns {
-    grid-area: sns;
-  }
-  .twitter {
-    grid-area: twitter;
-  }
-  .google {
-    grid-area: google;
-  }
-  .yahoo {
-    grid-area: yahoo;
-  }
-  .graphic {
-    grid-area: graphic;
-  }
-  .movie {
-    grid-area: movie;
-  }
-  .rss {
-    grid-area: rss;
-  }
-  .others {
-    grid-area: others;
-  }
+body {
+  display: grid;
+  grid-auto-rows: 250px;
+  grid-template-columns: repeat(auto-fit, 250px);
+  grid-gap: 1em 1em;
+  justify-content: center;
+  align-content: center;
+}
+#grbl {
+  display: block;
+  width: 250px;
+  height: 240px;
+  padding-top: 10px;
+  text-align: center;
+  border: 1px solid #0068b7;
+  border-radius: 10%;
+  background-image: url(images/granbluefantasy.jpg);
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+  background-color: #a0d8ef;
+}
+#sns {
+  display: block;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  line-height: 250px;
+  border: 1px solid #0068b7;
+  border-radius: 10%;
+  background-image: url(images/network_people_connection.png);
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+  background-color: #164a84;
+}
+#twitter {
+  display: block;
+  width: 250px;
+  height: 240px;
+  padding-top: 10px;
+  text-align: center;
+  border: 1px solid #0068b7;
+  border-radius: 10%;
+  background-image: url(images/bird_aoitori_bluebird.png);
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+  background-color: #a0d8ef;
+}
+#google {
+  display: block;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  line-height: 250px;
+  border: 1px solid #0068b7;
+  border-radius: 10%;
+  background-image: url(images/search_mushimegane.png);
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+  background-color: #a0d8ef;
+}
+#yahoo {
+  display: block;
+  width: 250px;
+  height: 240px;
+  padding-top: 10px;
+  text-align: center;
+  border: 1px solid #0068b7;
+  border-radius: 10%;
+  background-image: url(images/computer_search_kensaku.png);
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+#graphic {
+  display: block;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  line-height: 250px;
+  border: 1px solid #0068b7;
+  border-radius: 10%;
+  background-image: url(images/otaku.png);
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+  background-color: #f08080;
+}
+#movie {
+  display: block;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  line-height: 250px;
+  border: 1px solid #0068b7;
+  border-radius: 10%;
+  background-image: url(images/otaku.png);
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+  background-color: #b22222;
+}
+#rss {
+  display: block;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  line-height: 250px;
+  border: 1px solid #0068b7;
+  border-radius: 10%;
+  background-color: #a0d8ef;
+}
+#others {
+  display: block;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  line-height: 250px;
+  border: 1px solid #0068b7;
+  border-radius: 10%;
+  background-color: #a0d8ef;
 }
 
-@media (min-width: 1081px) {
-  body {
-    display: grid;
-    grid-auto-rows: 250px;
-    grid-template-columns: repeat(auto-fill, 250px);
-    grid-gap: 1em 1em;
-  }
-  #grbl {
-    display: block;
-    width: 250px;
-    height: 240px;
-    padding-top: 10px;
-    text-align: center;
-    border: 1px solid #0068b7;
-    border-radius: 10%;
-    background-image: url(images/granbluefantasy.jpg);
-    background-size: 250px 250px;
-    background-repeat: no-repeat;
-    background-color: #a0d8ef;
-  }
-  #sns {
-    display: block;
-    width: 250px;
-    height: 250px;
-    text-align: center;
-    line-height: 250px;
-    border: 1px solid #0068b7;
-    border-radius: 10%;
-    background-image: url(images/network_people_connection.png);
-    background-size: 250px 250px;
-    background-repeat: no-repeat;
-    background-color: #164a84;
-  }
-  #twitter {
-    display: block;
-    width: 250px;
-    height: 240px;
-    padding-top: 10px;
-    text-align: center;
-    border: 1px solid #0068b7;
-    border-radius: 10%;
-    background-image: url(images/bird_aoitori_bluebird.png);
-    background-size: 250px 250px;
-    background-repeat: no-repeat;
-    background-color: #a0d8ef;
-  }
-  #google {
-    display: block;
-    width: 250px;
-    height: 250px;
-    text-align: center;
-    line-height: 250px;
-    border: 1px solid #0068b7;
-    border-radius: 10%;
-    background-image: url(images/search_mushimegane.png);
-    background-size: 250px 250px;
-    background-repeat: no-repeat;
-    background-color: #a0d8ef;
-  }
-  #yahoo {
-    display: block;
-    width: 250px;
-    height: 240px;
-    padding-top: 10px;
-    text-align: center;
-    border: 1px solid #0068b7;
-    border-radius: 10%;
-    background-image: url(images/computer_search_kensaku.png);
-    background-size: 250px 250px;
-    background-repeat: no-repeat;
-    background-color: #fff;
-  }
-  #graphic {
-    display: block;
-    width: 250px;
-    height: 250px;
-    text-align: center;
-    line-height: 250px;
-    border: 1px solid #0068b7;
-    border-radius: 10%;
-    background-image: url(images/otaku.png);
-    background-size: 250px 250px;
-    background-repeat: no-repeat;
-    background-color: #f08080;
-  }
-  #movie {
-    display: block;
-    width: 250px;
-    height: 250px;
-    text-align: center;
-    line-height: 250px;
-    border: 1px solid #0068b7;
-    border-radius: 10%;
-    background-image: url(images/otaku.png);
-    background-size: 250px 250px;
-    background-repeat: no-repeat;
-    background-color: #b22222;
-  }
-  #rss {
-    display: block;
-    width: 250px;
-    height: 250px;
-    text-align: center;
-    line-height: 250px;
-    border: 1px solid #0068b7;
-    border-radius: 10%;
-    background-color: #a0d8ef;
-  }
-  #others {
-    display: block;
-    width: 250px;
-    height: 250px;
-    text-align: center;
-    line-height: 250px;
-    border: 1px solid #0068b7;
-    border-radius: 10%;
-    background-color: #a0d8ef;
-  }
+#grbl-open + label {
+  color: #000;
+  font-size: 180%;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 #fff,
+               2px -2px 0 #fff,
+               -2px 2px 0 #fff,
+               -2px -2px 0 #fff;
+}
+#sns-open + label {
+  color: #000;
+  font-size: 300%;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 #fff,
+               2px -2px 0 #fff,
+               -2px 2px 0 #fff,
+               -2px -2px 0 #fff;
+}
+#movie-open + label {
+  color: #fff;
+  font-size: 300%;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 #000,
+               2px -2px 0 #000,
+               -2px 2px 0 #000,
+               -2px -2px 0 #000;
+}
+#rss-open + label {
+  color: #000;
+  font-size: 300%;
+  font-weight: bold;
+}
+#google-open + label {
+  color: #000;
+  font-size: 300%;
+  font-weight: bold;
+}
+#twitter-open + label {
+  color: #000;
+  font-size: 300%;
+  font-weight: bold;
+}
+#graphic-open + label {
+  color: #fff;
+  font-size: 300%;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 #000,
+               2px -2px 0 #000,
+               -2px 2px 0 #000,
+               -2px -2px 0 #000;
+}
+#others-open + label {
+  color: #000;
+  font-size: 300%;
+  font-weight: bold;
+}
+#yahoo-open + label {
+  color: #f00;
+  font-size: 300%;
+  font-weight: bold;
+}
 
-  #grbl-open + label {
-    color: #000;
-    font-size: 180%;
-    font-weight: bold;
-    text-shadow: 2px 2px 0 #fff,
-                 2px -2px 0 #fff,
-                 -2px 2px 0 #fff,
-                 -2px -2px 0 #fff;
-  }
-  #sns-open + label {
-    color: #000;
-    font-size: 300%;
-    font-weight: bold;
-    text-shadow: 2px 2px 0 #fff,
-                 2px -2px 0 #fff,
-                 -2px 2px 0 #fff,
-                 -2px -2px 0 #fff;
-  }
-  #movie-open + label {
-    color: #fff;
-    font-size: 300%;
-    font-weight: bold;
-    text-shadow: 2px 2px 0 #000,
-                 2px -2px 0 #000,
-                 -2px 2px 0 #000,
-                 -2px -2px 0 #000;
-  }
-  #rss-open + label {
-    color: #000;
-    font-size: 300%;
-    font-weight: bold;
-  }
-  #google-open + label {
-    color: #000;
-    font-size: 300%;
-    font-weight: bold;
-  }
-  #twitter-open + label {
-    color: #000;
-    font-size: 300%;
-    font-weight: bold;
-  }
-  #graphic-open + label {
-    color: #fff;
-    font-size: 300%;
-    font-weight: bold;
-    text-shadow: 2px 2px 0 #000,
-                 2px -2px 0 #000,
-                 -2px 2px 0 #000,
-                 -2px -2px 0 #000;
-  }
-  #others-open + label {
-    color: #000;
-    font-size: 300%;
-    font-weight: bold;
-  }
-  #yahoo-open + label {
-    color: #f00;
-    font-size: 300%;
-    font-weight: bold;
-  }
-
-  /*あとでやる todo*/
-  .modal_contents > ul > li {
-    display: block;
-    width: 200px;
-    height: 200px;
-    font-size: 75%;
-    white-space: normal;
-    background-color: #2e2e2e;
-  }
+/*あとでやる todo*/
+.modal_contents > ul > li {
+  display: block;
+  width: 200px;
+  height: 200px;
+  font-size: 75%;
+  white-space: normal;
+  background-color: #2e2e2e;
 }
