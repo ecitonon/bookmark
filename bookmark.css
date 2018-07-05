@@ -12,15 +12,6 @@ h1 {
 ul {
   list-style-type: none;
 }
-ul li {
-  margin: 1em 0;
-  margin-left: 1em;
-}
-ul li::before {
-  content: "▷";
-  color: #fff;
-  font-size: 75%;
-}
 a {
   margin-left: 0.75em;
   font-size: 20px;
@@ -81,19 +72,11 @@ a:visited {
 @media (min-width: 1081px) {
   body {
     display: grid;
-    grid:
-      "....... ....... ....... ....... ....... ......." 2em
-      "....... grbl    sns     movie   rss     ......." max-content
-      "....... ....... ....... ....... ....... ......." 2em
-      "....... google  twitter graphic others  ......." max-content
-      "....... ....... ....... ....... ....... ......." 2em
-      "....... yahoo   ....... ....... ....... ......." max-content
-      "....... ....... ....... ....... ....... ......." 1fr
-      / 1fr max-content max-content max-content max-content 1fr;
-      grid-column-gap: 2em;
+    grid-template-rows: 250px 250px 250px;
+    grid-template-columns: : 250px 250px 250px;
+    grid-auto-flow: row dense;
   }
   #grbl {
-    grid-area: grbl;
     display: block;
     width: 250px;
     height: 240px;
@@ -107,7 +90,6 @@ a:visited {
     background-color: #a0d8ef;
   }
   #sns {
-    grid-area: sns;
     display: block;
     width: 250px;
     height: 250px;
@@ -121,7 +103,6 @@ a:visited {
     background-color: #164a84;
   }
   #twitter {
-    grid-area: twitter;
     display: block;
     width: 250px;
     height: 240px;
@@ -135,7 +116,6 @@ a:visited {
     background-color: #a0d8ef;
   }
   #google {
-    grid-area: google;
     display: block;
     width: 250px;
     height: 250px;
@@ -149,7 +129,6 @@ a:visited {
     background-color: #a0d8ef;
   }
   #yahoo {
-    grid-area: yahoo;
     display: block;
     width: 250px;
     height: 240px;
@@ -163,7 +142,6 @@ a:visited {
     background-color: #fff;
   }
   #graphic {
-    grid-area: graphic;
     display: block;
     width: 250px;
     height: 250px;
@@ -177,7 +155,6 @@ a:visited {
     background-color: #f08080;
   }
   #movie {
-    grid-area: movie;
     display: block;
     width: 250px;
     height: 250px;
@@ -191,7 +168,6 @@ a:visited {
     background-color: #b22222;
   }
   #rss {
-    grid-area: rss;
     display: block;
     width: 250px;
     height: 250px;
@@ -202,7 +178,6 @@ a:visited {
     background-color: #a0d8ef;
   }
   #others {
-    grid-area: others;
     display: block;
     width: 250px;
     height: 250px;
@@ -273,5 +248,15 @@ a:visited {
     color: #f00;
     font-size: 300%;
     font-weight: bold;
+  }
+
+  /*あとでやる todo*/
+  .modal_contents > ul > li {
+    display: block;
+    width: 200px;
+    height: 200px;
+    font-size: 75%;
+    white-space: normal;
+    background-color: #2e2e2e;
   }
 }
