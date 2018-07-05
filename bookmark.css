@@ -72,9 +72,9 @@ a:visited {
 @media (min-width: 1081px) {
   body {
     display: grid;
-    grid-template-rows: 250px 250px 250px;
-    grid-template-columns: : 250px 250px 250px;
-    grid-auto-flow: row dense;
+    grid-auto-rows: 250px;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-gap: 1em 1em;
   }
   #grbl {
     display: block;
