@@ -44,15 +44,15 @@ input[name="modal_sw"],
 #others-open:checked + label ~ .modal_wrapper,
 #yahoo-open:checked + label ~ .modal_wrapper {
   display: block;
-  width: 30%;
-  height: 80%;
+  width: 60vw;
+  height: 80vh;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 998;
   border: 2px solid #000;
-  background: rgba(256, 256, 256, 0.8);
+  background: rgba(0, 0, 0, 0.8);
 }
 #grbl-open:checked + label ~ .modal_wrapper > .modal_contents,
 #sns-open:checked + label ~ .modal_wrapper > .modal_contents,
@@ -63,8 +63,9 @@ input[name="modal_sw"],
 #graphic-open:checked + label ~ .modal_wrapper > .modal_contents,
 #others-open:checked + label ~ .modal_wrapper > .modal_contents,
 #yahoo-open:checked + label ~ .modal_wrapper > .modal_contents {
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
+  display: block;
+  width: 100%;
+  height: 100%;
   overflow-y: auto;
 }
 #grbl-open:checked + label ~ #grbl-close_overlay + label,
@@ -86,7 +87,7 @@ input[name="modal_sw"],
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-  background: rgba(128, 128, 128, 0.4);
+  background: rgba(0, 0, 0, 0.8);
 }
 #grbl-open:checked ~ #grbl-close_button + label,
 #sns-open:checked ~ #sns-close_button + label,

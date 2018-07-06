@@ -18,6 +18,7 @@ h1 {
 }
 ul {
   list-style-type: none;
+  text-align: center;
 }
 a {
   margin-left: 0.75em;
@@ -209,6 +210,9 @@ a:visited {
   display: block;
   width: 200px;
   height: 200px;
+  margin: 1em 1em;
+  border-radius: 10%;
+  float: left;
   font-size: 75%;
   white-space: normal;
   background-color: #2e2e2e;
