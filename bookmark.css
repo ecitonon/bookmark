@@ -1,10 +1,17 @@
 
 /* @author ecitonon */
 body {
-  width: 100vw;
-  height: 100vh;
+  display: grid;
+  width: 90vw;
+  height: calc(100vh - 10vh);
+  padding: 5vh 5vw;
+  grid-auto-rows: 250px;
+  grid-template-columns: repeat(auto-fit, 250px);
+  grid-gap: 1em 1em;
+  justify-content: center;
   background: linear-gradient(to bottom, #3eb370, #007b43);
 }
+
 h1 {
   color: #fff;
   font-size: 40px;
@@ -23,16 +30,6 @@ a:visited {
   color: #fa5858;
 }
 
-body {
-  display: grid;
-  width: 90vw;
-  height: calc(100vh - 10vh);
-  padding: 5vh 5vw;
-  grid-auto-rows: 250px;
-  grid-template-columns: repeat(auto-fit, 250px);
-  grid-gap: 1em 1em;
-  justify-content: center;
-}
 #grbl {
   display: block;
   width: 250px;
