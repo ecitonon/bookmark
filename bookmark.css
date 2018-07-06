@@ -25,11 +25,13 @@ a:visited {
 
 body {
   display: grid;
+  width: 90vw;
+  height: calc(100vh - 10vh);
+  padding: 5vh 5vw;
   grid-auto-rows: 250px;
   grid-template-columns: repeat(auto-fit, 250px);
   grid-gap: 1em 1em;
   justify-content: center;
-  align-content: center;
 }
 #grbl {
   display: block;
