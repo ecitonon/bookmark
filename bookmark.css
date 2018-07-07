@@ -205,8 +205,7 @@ a:visited {
   font-weight: bold;
 }
 
-/*あとでやる todo*/
-.modal_contents > ul > li {
+.modal_contents > .link {
   display: block;
   width: 200px;
   height: 200px;
@@ -216,4 +215,10 @@ a:visited {
   font-size: 75%;
   white-space: normal;
   background-color: #2e2e2e;
+}
+
+.modal_contents > .link > a {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
