@@ -44,8 +44,8 @@ input[name="modal_sw"],
 #others-open:checked + label ~ .modal_wrapper,
 #yahoo-open:checked + label ~ .modal_wrapper {
   display: block;
-  width: 50vw;
-  height: 50vh;
+  width: 70vw;
+  height: 70vh;
   position: fixed;
   top: 50%;
   left: 50%;
