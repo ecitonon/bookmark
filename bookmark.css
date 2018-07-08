@@ -35,7 +35,7 @@ a:visited {
   text-align: center;
   border: 1px solid #0068b7;
   border-radius: 10%;
-  background-image: url(images/granbluefantasy.jpg);
+  background-image: url(images/logo_granbluefantasy.jpg);
   background-size: 250px 250px;
   background-repeat: no-repeat;
   background-color: #a0d8ef;
@@ -61,10 +61,10 @@ a:visited {
   text-align: center;
   border: 1px solid #0068b7;
   border-radius: 10%;
-  background-image: url(images/bird_aoitori_bluebird.png);
+  background-image: url(images/logo_twitter.png);
   background-size: 250px 250px;
   background-repeat: no-repeat;
-  background-color: #a0d8ef;
+  background-color: #fff;
 }
 #google {
   display: block;
@@ -74,10 +74,10 @@ a:visited {
   line-height: 250px;
   border: 1px solid #0068b7;
   border-radius: 10%;
-  background-image: url(images/search_mushimegane.png);
+  background-image: url(images/logo_google.png);
   background-size: 250px 250px;
   background-repeat: no-repeat;
-  background-color: #a0d8ef;
+  background-color: #fff;
 }
 #yahoo {
   display: block;
@@ -87,7 +87,7 @@ a:visited {
   text-align: center;
   border: 1px solid #0068b7;
   border-radius: 10%;
-  background-image: url(images/computer_search_kensaku.png);
+  background-image: url(images/logo_yahoo.png);
   background-size: 250px 250px;
   background-repeat: no-repeat;
   background-color: #fff;
@@ -100,10 +100,10 @@ a:visited {
   line-height: 250px;
   border: 1px solid #0068b7;
   border-radius: 10%;
-  background-image: url(images/otaku.png);
+  background-image: url(images/logo_pinterest.png);
   background-size: 250px 250px;
   background-repeat: no-repeat;
-  background-color: #f08080;
+  background-color: #fff;
 }
 #movie {
   display: block;
@@ -113,10 +113,10 @@ a:visited {
   line-height: 250px;
   border: 1px solid #0068b7;
   border-radius: 10%;
-  background-image: url(images/otaku.png);
+  background-image: url(images/logo_youtube.png);
   background-size: 250px 250px;
   background-repeat: no-repeat;
-  background-color: #b22222;
+  background-color: #fff;
 }
 #rss {
   display: block;
