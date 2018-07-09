@@ -35,39 +35,42 @@ a:visited {
   height: 240px;
   padding-top: 10px;
   position: relative;
-  border: 1px solid #0068b7;
-  border-radius: 10%;
+  border: 1px solid #fff;
+  border-radius: 15%;
   background-size: 250px 250px;
   background-repeat: no-repeat;
   background-color: #fff;
-}
-#rss, #others {
-  text-align: center;
-  line-height: 240px;
-  background-color: #a0d8ef;
 }
 #grbl {
   background-image: url(images/logo_granbluefantasy.jpg);
   background-color: #a0d8ef;
 }
 #sns {
-  background-image: url(images/network_people_connection.png);
+  background-image: url(images/www_marksign_net/iine.png);
   background-color: #164a84;
 }
 #twitter {
-  background-image: url(images/logo_twitter.png);
+  background-image: url(images/www_marksign_net/twitter.png);
 }
 #google {
-  background-image: url(images/logo_google.png);
+  background-image: url(images/www_marksign_net/chrome.png);
 }
 #yahoo {
-  background-image: url(images/logo_yahoo.png);
+  background-image: url(images/www_marksign_net/yahoo.png);
+}
+#rss {
+  background-image: url(images/www_marksign_net/rss.png);
 }
 #graphic {
-  background-image: url(images/logo_pinterest.png);
+  background-image: url(images/www_marksign_net/pinterest.png);
 }
 #movie {
-  background-image: url(images/logo_youtube.png);
+  background-image: url(images/www_marksign_net/youtube.png);
+}
+#others {
+  text-align: center;
+  line-height: 240px;
+  background-color: #a0d8ef;
 }
 
 #grbl-open + label > img,
@@ -75,23 +78,15 @@ a:visited {
 #twitter-open + label > img,
 #google-open + label > img,
 #yahoo-open + label > img,
+#rss-open + label > img,
 #graphic-open + label > img,
-#movie-open + label > img {
+#movie-open + label > img,
+#others-open + label > img {
   width: 2.5em;
   height: 2.5em;
   position: absolute;
   right: 0.5em;
   bottom: 0.5em;
-}
-#rss-open + label {
-  color: #000;
-  font-size: 300%;
-  font-weight: bold;
-}
-#others-open + label {
-  color: #000;
-  font-size: 300%;
-  font-weight: bold;
 }
 
 .modal_contents > ul > li {
