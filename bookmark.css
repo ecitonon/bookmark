@@ -35,7 +35,6 @@ a:visited {
   height: 240px;
   padding-top: 10px;
   position: relative;
-  border: 1px solid #fff;
   border-radius: 15%;
   background-size: 250px 250px;
   background-repeat: no-repeat;
@@ -68,9 +67,7 @@ a:visited {
   background-image: url(images/www_marksign_net/youtube.png);
 }
 #others {
-  text-align: center;
-  line-height: 240px;
-  background-color: #a0d8ef;
+  background-image: url(images/www_marksign_net/ie.png);
 }
 
 #grbl-open + label > img,
