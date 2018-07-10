@@ -1,27 +1,20 @@
 
 /* @author ecitonon */
-* {
-  background-color: #2E2E2E;
+body {
+  display: grid;
+  width: 90vw;
+  height: calc(100vh - 10vh);
+  padding: 5vh 5vw;
+  grid-auto-rows: 250px;
+  grid-template-columns: repeat(auto-fit, 250px);
+  grid-gap: 1em 1em;
+  justify-content: center;
+  background: linear-gradient(to bottom, #3eb370, #007b43);
 }
-h1 {
-  color: #fff;
-  font-size: 40px;
-}
+
 ul {
   list-style-type: none;
-}
-ul li {
-  margin: 1em 0;
-  margin-left: 1em;
-}
-ul li::before {
-  content: "▷";
-  color: #fff;
-  font-size: 75%;
-}
-a {
-  margin-left: 0.75em;
-  font-size: 20px;
+  text-align: center;
 }
 a:link {
   color: #2E9AFE;
@@ -30,91 +23,72 @@ a:visited {
   color: #fa5858;
 }
 
-@media (max-width: 1080px) {
-  body {
-    display: grid;
-    grid:
-      "....... ....... ....... ....... ......." 5em
-      "....... grbl    ....... sns     ......." max-content
-      "....... ....... ....... ....... ......." 2em
-      "....... yahoo   ....... twitter ......." max-content
-      "....... ....... ....... ....... ......." 2em
-      "....... google  ....... movie   ......." max-content
-      "....... ....... ....... ....... ......." 2em
-      "....... rss     ....... graphic ......." max-content
-      "....... ....... ....... ....... ......." 2em
-      "....... others  ....... ....... ......." max-content
-      "....... ....... ....... ....... ......." 1fr
-      / 1fr max-content 1fr max-content 1fr;
-  }
-  .grbl {
-    grid-area: grbl;
-  }
-  .sns {
-    grid-area: sns;
-  }
-  .twitter {
-    grid-area: twitter;
-  }
-  .google {
-    grid-area: google;
-  }
-  .yahoo {
-    grid-area: yahoo;
-  }
-  .graphic {
-    grid-area: graphic;
-  }
-  .movie {
-    grid-area: movie;
-  }
-  .rss {
-    grid-area: rss;
-  }
-  .others {
-    grid-area: others;
-  }
+.l-container {
+  display: block;
+  width: 250px;
+  height: 240px;
+  padding-top: 10px;
+  position: relative;
+  border-radius: 15%;
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+#grbl {
+  background-image: url(images/logo_granbluefantasy.jpg);
+  background-color: #a0d8ef;
+}
+#sns {
+  background-image: url(images/www_marksign_net/iine.png);
+  background-color: #164a84;
+}
+#twitter {
+  background-image: url(images/www_marksign_net/twitter.png);
+}
+#google {
+  background-image: url(images/www_marksign_net/chrome.png);
+}
+#yahoo {
+  background-image: url(images/www_marksign_net/yahoo.png);
+}
+#rss {
+  background-image: url(images/www_marksign_net/rss.png);
+}
+#graphic {
+  background-image: url(images/www_marksign_net/pinterest.png);
+}
+#movie {
+  background-image: url(images/www_marksign_net/youtube.png);
+}
+#others {
+  background-image: url(images/www_marksign_net/ie.png);
 }
 
-@media (min-width: 1081px) {
-  body {
-    display: grid;
-    grid:
-      "....... ....... ....... ....... ....... ......." 2em
-      "....... grbl    sns     movie   rss     ......." max-content
-      "....... ....... ....... ....... ....... ......." 2em
-      "....... google  twitter graphic others  ......." max-content
-      "....... ....... ....... ....... ....... ......." 2em
-      "....... yahoo   ....... ....... ....... ......." max-content
-      "....... ....... ....... ....... ....... ......." 1fr
-      / 1fr max-content max-content max-content max-content 1fr;
-      grid-column-gap: 6em;
-  }
-  .grbl {
-    grid-area: grbl;
-  }
-  .sns {
-    grid-area: sns;
-  }
-  .twitter {
-    grid-area: twitter;
-  }
-  .google {
-    grid-area: google;
-  }
-  .yahoo {
-    grid-area: yahoo;
-  }
-  .graphic {
-    grid-area: graphic;
-  }
-  .movie {
-    grid-area: movie;
-  }
-  .rss {
-    grid-area: rss;
-  }
-  .others {
-    grid-area: others;
-  }
+.burger {
+  width: 2.5em;
+  height: 2.5em;
+  position: absolute;
+  right: 0.5em;
+  bottom: 0.5em;
+}
+
+.modal-contents > ul > li {
+  display: block;
+  width: calc(100% - 2px);
+  height: 4em;
+  border: 1px solid #000;
+  text-align: left;
+  line-height: 4em;
+  text-indent: 1em;
+  white-space: nowrap;
+  background-color: #2e2e2e;
+}
+.modal-contents > ul > .tittle {
+  position: sticky;
+  top: -1px;
+  color: #fff;
+  background-color: #000;
+}
+.modal-contents > ul > li * {
+  font-size: 2em;
 }

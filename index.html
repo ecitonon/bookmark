@@ -15,107 +15,198 @@
     -->
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="bookmark.css">
-    <link rel="icon" type="image/png" href="bookmark.png">
+    <link rel="stylesheet" type="text/css" href="modal.css">
+    <link rel="icon" type="image/png" href="images/bookmark.png">
   </head>
   <body>
-    <section class="grbl">
-      <h1>GranblueFantasy</h1>
-      <ul>
-        <li><a href="http://granbluefantasy.jp/">公式</a></li>
-        <li><a href="http://game.granbluefantasy.jp/#top">Web版グランブルーファンタジー</a></li>
-        <!-- <li><a href="#" onclick="granbluefantasy_game(); return false;">Web版グランブルーファンタジー</a></li> -->
-        <li><a href="http://mirror.gbf-wiki.com/">グラブルwiki ミラー</a></li>
-        <li><a href="https://granblue.jp/">火力騎空士への道</a></li>
-        <li><a href="#" onclick="granbluefantasy_raidfinder(); return false;">raidfinder</a></li>
-        <li><a href="http://gbf-bbs.com/">グラブル騎空団募集掲示板</a></li>
-        <li><a href="https://prfac.com/gbf/summon/">フレ石編成的ななにか</a></li>
-        <li><a href="http://hsimyu.net/motocal/">元カレ計算機</a></li>
-      </ul>
+    <section id="grbl" class="l-container">
+      <input type="radio" name="modal_sw" id="grbl-open" class="open-switch"/>
+      <label for="grbl-open" class="open-label"><img class="burger" src="images/icon_burger.png"></label>
+      <input type="radio" name="modal_sw" id="grbl-overlay"/>
+      <label for="grbl-overlay" class="overlay-label"></label>
+      <input type="radio" name="modal_sw" id="grbl-close"/>
+      <label for="grbl-close" class="close-label">×</label>
+      <div class="modal">
+        <div class="modal-contents">
+          <ul>
+            <li class="tittle"><span>GranblueFantasy</span></li>
+            <li><a href="http://granbluefantasy.jp/">公式</a></li>
+            <li><a href="http://game.granbluefantasy.jp/#top">Web版グランブルーファンタジー</a></li>
+            <!-- <li><a href="#" onclick="granbluefantasy_game(); return false;">Web版グランブルーファンタジー</a></li> -->
+            <li><a href="http://mirror.gbf-wiki.com/">グラブルwikiミラー</a></li>
+            <li><a href="https://granblue.jp/">火力騎空士への道</a></li>
+            <li><a href="#" onclick="granbluefantasy_raidfinder(); return false;">raidfinder</a></li>
+            <li><a href="http://gbf-bbs.com/">グラブル騎空団募集掲示板</a></li>
+            <li><a href="https://prfac.com/gbf/summon/">フレ石編成的ななにか</a></li>
+            <li><a href="http://hsimyu.net/motocal/">元カレ計算機</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <section class="sns">
-      <h1>SNS</h1>
-      <ul>
-        <li><a href="https://discordapp.com/">Discord</a></li>
-        <li><a href="http://ja-jp.facebook.com/">Facebook</a></li>
-        <li><a href="#" onclick="mstdn_jp(); return false;">mstdn.jp</a></li>
-        <li><a href="#" onclick="mstdn_workers(); return false;">mstdn-workers.com</a></li>
-        <li><a href="https://www.pixiv.net/">Pixiv</a></li>
-        <li><a href="https://soundcloud.com/">SoundCloud</a></li>
-        <li><a href="#" onclick="plug_dj(); return false;">スナックへるつ＠Plug.dj</a></li>
-        <li><a href="http://hatenablog.com/">はてなブログ</a></li>
-      </ul>
+    <section id="sns" class="l-container">
+      <input type="radio" name="modal_sw" id="sns-open" class="open-switch"/>
+      <label for="sns-open" class="open-label"><img class="burger" src="images/icon_burger.png"></label>
+      <input type="radio" name="modal_sw" id="sns-overlay"/>
+      <label for="sns-overlay" class="overlay-label"></label>
+      <input type="radio" name="modal_sw" id="sns-close"/>
+      <label for="sns-close" class="close-label">×</label>
+      <div class="modal">
+        <div class="modal-contents">
+          <ul>
+            <li class="tittle"><span>SNS</span></li>
+            <li><a href="https://discordapp.com/">Discord</a></li>
+            <li><a href="http://ja-jp.facebook.com/">Facebook</a></li>
+            <li><a href="#" onclick="mstdn_jp(); return false;">mstdn.jp</a></li>
+            <li><a href="#" onclick="mstdn_workers(); return false;">mstdn-workers.com</a></li>
+            <li><a href="https://www.pixiv.net/">Pixiv</a></li>
+            <li><a href="https://soundcloud.com/">SoundCloud</a></li>
+            <li><a href="#" onclick="plug_dj(); return false;">スナックへるつ＠Plug.dj</a></li>
+            <li><a href="http://hatenablog.com/">はてなブログ</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <section class="twitter">
-      <h1>Twitter</h1>
-      <ul>
-        <li><a href="http://twitter.com/">Twitter</a></li>
-        <li><a href="http://zoi.herokuapp.com/">zoi</a></li>
-        <li><a href="http://shindanmaker.com/235254">今夜が山のようです</a></li>
-      </ul>
+    <section id="twitter" class="l-container">
+      <input type="radio" name="modal_sw" id="twitter-open" class="open-switch"/>
+      <label for="twitter-open" class="open-label"><img class="burger" src="images/icon_burger.png"></label>
+      <input type="radio" name="modal_sw" id="twitter-overlay"/>
+      <label for="twitter-overlay" class="overlay-label"></label>
+      <input type="radio" name="modal_sw" id="twitter-close"/>
+      <label for="twitter-close" class="close-label">×</label>
+      <div class="modal">
+        <div class="modal-contents">
+          <ul>
+            <li class="tittle"><span>Twitter</span></li>
+            <li><a href="http://twitter.com/">Twitter</a></li>
+            <li><a href="http://zoi.herokuapp.com/">zoi</a></li>
+            <li><a href="http://shindanmaker.com/235254">今夜が山のようです</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <section class="google">
-      <h1>Google</h1>
-      <ul>
-        <li><a href="http://www.google.co.jp/">Google</a></li>
-        <li><a href="https://calendar.google.com/calendar/">GoogleCalendar</a></li>
-        <li><a href="https://www.google.co.jp/maps/">GoogleMap</a></li>
-        <li><a href="https://play.google.com/store">GooglePlay</a></li>
-        <li><a href="https://docs.google.com/spreadsheets/">GoogleSpreadSheets</a></li>
-        <li><a href="https://translate.google.co.jp/">Google翻訳</a></li>
-      </ul>
+    <section id="google" class="l-container">
+      <input type="radio" name="modal_sw" id="google-open" class="open-switch"/>
+      <label for="google-open" class="open-label"><img class="burger" src="images/icon_burger.png"></label>
+      <input type="radio" name="modal_sw" id="google-overlay"/>
+      <label for="google-overlay" class="overlay-label"></label>
+      <input type="radio" name="modal_sw" id="google-close"/>
+      <label for="google-close" class="close-label">×</label>
+      <div class="modal">
+        <div class="modal-contents">
+          <ul>
+            <li class="tittle"><span>Google</span></li>
+            <li><a href="http://www.google.co.jp/">Google</a></li>
+            <li><a href="https://calendar.google.com/calendar/">GoogleCalendar</a></li>
+            <li><a href="https://www.google.co.jp/maps/">GoogleMap</a></li>
+            <li><a href="https://play.google.com/store">GooglePlay</a></li>
+            <li><a href="https://docs.google.com/spreadsheets/">GoogleSpreadSheets</a></li>
+            <li><a href="https://translate.google.co.jp/">Google翻訳</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <section class="yahoo">
-      <h1>Yahoo!</h1>
-      <ul>
-        <li><a href="http://www.yahoo.co.jp/">Yahoo! Japan</a></li>
-        <li><a href="https://weather.yahoo.co.jp/weather/jp/3.html?day=1">Yahoo! 天気(関東)</a></li>
-        <li><a href="https://transit.yahoo.co.jp/">Yahoo! 乗換案内</a></li>
-        <li><a href="https://transit.yahoo.co.jp/traininfo/area/4/">Yahoo! 路線情報(関東)</a></li>
-      </ul>
+    <section id="yahoo" class="l-container">
+      <input type="radio" name="modal_sw" id="yahoo-open" class="open-switch"/>
+      <label for="yahoo-open" class="open-label"><img class="burger" src="images/icon_burger.png"></label>
+      <input type="radio" name="modal_sw" id="yahoo-overlay"/>
+      <label for="yahoo-overlay" class="overlay-label"></label>
+      <input type="radio" name="modal_sw" id="yahoo-close"/>
+      <label for="yahoo-close" class="close-label">×</label>
+      <div class="modal">
+        <div class="modal-contents">
+          <ul>
+            <li class="tittle"><span>Yahoo!</span></li>
+            <li><a href="http://www.yahoo.co.jp/">Yahoo! Japan</a></li>
+            <li><a href="https://weather.yahoo.co.jp/weather/jp/3.html?day=1">Yahoo! 天気(関東)</a></li>
+            <li><a href="https://transit.yahoo.co.jp/">Yahoo! 乗換案内</a></li>
+            <li><a href="https://transit.yahoo.co.jp/traininfo/area/4/">Yahoo! 路線情報(関東)</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <section class="rss">
-      <h1>RSS</h1>
-      <ul>
-        <li><a href="http://japanese.engadget.com/">Engadget</a></li>
-        <li><a href="http://gigazine.net/">GIGAZINE</a></li>
-        <li><a href="http://www.gizmodo.jp/">Gizmodo</a></li>
-        <li><a href="http://www.lifehacker.jp/">LifeHacker</a></li>
-        <li><a href="http://jp.techcrunch.com/">TechCrunch</a></li>
-        <li><a href="http://nlab.itmedia.co.jp/">ねとらぼ</a></li>
-        <li><a href="http://www.po-kaki-to.com/">ポッカキット</a></li>
-      </ul>
+    <section id="rss" class="l-container">
+      <input type="radio" name="modal_sw" id="rss-open" class="open-switch"/>
+      <label for="rss-open" class="open-label"><img class="burger" src="images/icon_burger.png"></label>
+      <input type="radio" name="modal_sw" id="rss-overlay"/>
+      <label for="rss-overlay" class="overlay-label"></label>
+      <input type="radio" name="modal_sw" id="rss-close"/>
+      <label for="rss-close" class="close-label">×</label>
+      <div class="modal">
+        <div class="modal-contents">
+          <ul>
+            <li class="tittle"><span>RSS</span></li>
+            <li><a href="http://japanese.engadget.com/">Engadget</a></li>
+            <li><a href="http://gigazine.net/">GIGAZINE</a></li>
+            <li><a href="http://www.gizmodo.jp/">Gizmodo</a></li>
+            <li><a href="http://www.lifehacker.jp/">LifeHacker</a></li>
+            <li><a href="http://jp.techcrunch.com/">TechCrunch</a></li>
+            <li><a href="http://nlab.itmedia.co.jp/">ねとらぼ</a></li>
+            <li><a href="http://www.po-kaki-to.com/">ポッカキット</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <section class="graphic">
-      <h1>Graphic</h1>
-      <ul>
-        <li><a href="https://danbooru.donmai.us/">Danboru</a></li>
-        <li><a href="http://idol.sankakucomplex.com/">Idol Complex</a></li>
-        <li><a href="http://chan.sankakucomplex.com/">Sankaku Complex</a></li>
-        <li><a href="https://www.pinterest.jp/">Pinterest</a></li>
-      </ul>
+    <section id="graphic" class="l-container">
+      <input type="radio" name="modal_sw" id="graphic-open" class="open-switch"/>
+      <label for="graphic-open" class="open-label"><img class="burger" src="images/icon_burger.png"></label>
+      <input type="radio" name="modal_sw" id="graphic-overlay"/>
+      <label for="graphic-overlay" class="overlay-label"></label>
+      <input type="radio" name="modal_sw" id="graphic-close"/>
+      <label for="graphic-close" class="close-label">×</label>
+      <div class="modal">
+        <div class="modal-contents">
+          <ul>
+            <li class="tittle"><span>Graphic</span></li>
+            <li><a href="https://danbooru.donmai.us/">Danboru</a></li>
+            <li><a href="http://idol.sankakucomplex.com/">Idol Complex</a></li>
+            <li><a href="http://chan.sankakucomplex.com/">Sankaku Complex</a></li>
+            <li><a href="https://www.pinterest.jp/">Pinterest</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <section class="movie">
-      <h1>Movie</h1>
-      <ul>
-        <li><a href="https://www.amazon.co.jp/Prime-Video/b/ref=nav__aiv_piv?ie=UTF8&node=3535604051">AmazonPrimeVideo</a></li>
-        <li><a href="http://www.hulu.jp/">Hulu</a></li>
-        <li><a href="https://www.netflix.com/jp/">NetFlix</a></li>
-        <li><a href="http://www.b-ch.com/">バンダイチャンネル</a></li>
-        <li><a href="https://www.youtube.com/">YouTube</a></li>
-        <li><a href="http://www.nicovideo.jp/">ニコニコ動画</a></li>
-      </ul>
+    <section id="movie" class="l-container">
+      <input type="radio" name="modal_sw" id="movie-open" class="open-switch"/>
+      <label for="movie-open" class="open-label"><img class="burger" src="images/icon_burger.png"></label>
+      <input type="radio" name="modal_sw" id="movie-overlay"/>
+      <label for="movie-overlay" class="overlay-label"></label>
+      <input type="radio" name="modal_sw" id="movie-close"/>
+      <label for="movie-close" class="close-label">×</label>
+      <div class="modal">
+        <div class="modal-contents">
+          <ul>
+            <li class="tittle"><span>Movie</span></li>
+            <li><a href="https://www.amazon.co.jp/Prime-Video/b/ref=nav__aiv_piv?ie=UTF8&node=3535604051">AmazonPrimeVideo</a></li>
+            <li><a href="http://www.hulu.jp/">Hulu</a></li>
+            <li><a href="https://www.netflix.com/jp/">NetFlix</a></li>
+            <li><a href="http://www.b-ch.com/">バンダイチャンネル</a></li>
+            <li><a href="https://www.youtube.com/">YouTube</a></li>
+            <li><a href="http://www.nicovideo.jp/">ニコニコ動画</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
-    <section class="others">
-      <h1>Others</h1>
-      <ul>
-        <li><a href="http://www.amazon.co.jp/">Amazon.co.jp</a></li>
-        <li><a href="http://www.fliptitle.com/">FlipTitle</a></li>
-        <li><a href="https://www.office.com/?omkt=ja-jp">Office365</a></li>
-        <li><a href="https://www.instapaper.com/u">Instapaper</a></li>
-        <li><a href="http://getpocket.com/">Pocket</a></li>
-        <li><a href="#" onclick="others_24hoursofhappy(); return false;">24hoursofhappy</a></li>
-        <li><a href="http://uzurainfo.han-be.com/">うずらインフォ</a></li>
-      </ul>
+    <section id="others" class="l-container">
+      <input type="radio" name="modal_sw" id="others-open" class="open-switch"/>
+      <label for="others-open" class="open-label"><img class="burger" src="images/icon_burger.png"></label>
+      <input type="radio" name="modal_sw" id="others-overlay"/>
+      <label for="others-overlay" class="overlay-label"></label>
+      <input type="radio" name="modal_sw" id="others-close"/>
+      <label for="others-close" class="close-label">×</label>
+      <div class="modal">
+        <div class="modal-contents">
+          <ul>
+            <li class="tittle"><span>Others</span></li>
+            <li><a href="http://www.amazon.co.jp/">Amazon.co.jp</a></li>
+            <li><a href="http://www.fliptitle.com/">FlipTitle</a></li>
+            <li><a href="https://www.office.com/?omkt=ja-jp">Office365</a></li>
+            <li><a href="https://www.instapaper.com/u">Instapaper</a></li>
+            <li><a href="http://getpocket.com/">Pocket</a></li>
+            <li><a href="#" onclick="others_24hoursofhappy(); return false;">24hoursofhappy</a></li>
+            <li><a href="http://uzurainfo.han-be.com/">うずらインフォ</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
   </body>
 </html>
