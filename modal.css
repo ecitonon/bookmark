@@ -1,5 +1,5 @@
 
-.modal_wrapper,
+.modal,
 input[name="modal_sw"],
 #grbl-open + label ~ label,
 #sns-open + label ~ label,
@@ -34,15 +34,15 @@ input[name="modal_sw"],
 }
 
 /*** checked ***/
-#grbl-open:checked + label ~ .modal_wrapper,
-#sns-open:checked + label ~ .modal_wrapper,
-#movie-open:checked + label ~ .modal_wrapper,
-#rss-open:checked + label ~ .modal_wrapper,
-#google-open:checked + label ~ .modal_wrapper,
-#twitter-open:checked + label ~ .modal_wrapper,
-#graphic-open:checked + label ~ .modal_wrapper,
-#others-open:checked + label ~ .modal_wrapper,
-#yahoo-open:checked + label ~ .modal_wrapper {
+#grbl-open:checked + label ~ .modal,
+#sns-open:checked + label ~ .modal,
+#movie-open:checked + label ~ .modal,
+#rss-open:checked + label ~ .modal,
+#google-open:checked + label ~ .modal,
+#twitter-open:checked + label ~ .modal,
+#graphic-open:checked + label ~ .modal,
+#others-open:checked + label ~ .modal,
+#yahoo-open:checked + label ~ .modal {
   display: block;
   width: 70vw;
   height: 70vh;
@@ -54,15 +54,15 @@ input[name="modal_sw"],
   border: 2px solid #000;
   background: rgba(0, 0, 0, 0.8);
 }
-#grbl-open:checked + label ~ .modal_wrapper > .modal_contents,
-#sns-open:checked + label ~ .modal_wrapper > .modal_contents,
-#movie-open:checked + label ~ .modal_wrapper > .modal_contents,
-#rss-open:checked + label ~ .modal_wrapper > .modal_contents,
-#google-open:checked + label ~ .modal_wrapper > .modal_contents,
-#twitter-open:checked + label ~ .modal_wrapper > .modal_contents,
-#graphic-open:checked + label ~ .modal_wrapper > .modal_contents,
-#others-open:checked + label ~ .modal_wrapper > .modal_contents,
-#yahoo-open:checked + label ~ .modal_wrapper > .modal_contents {
+#grbl-open:checked + label ~ .modal > .modal-contents,
+#sns-open:checked + label ~ .modal > .modal-contents,
+#movie-open:checked + label ~ .modal > .modal-contents,
+#rss-open:checked + label ~ .modal > .modal-contents,
+#google-open:checked + label ~ .modal > .modal-contents,
+#twitter-open:checked + label ~ .modal > .modal-contents,
+#graphic-open:checked + label ~ .modal > .modal-contents,
+#others-open:checked + label ~ .modal > .modal-contents,
+#yahoo-open:checked + label ~ .modal > .modal-contents {
   display: block;
   width: 100%;
   height: 100%;
@@ -113,7 +113,7 @@ input[name="modal_sw"],
 }
 
 /*** animation ***/
-.modal_wrapper {
+.modal {
   animation: fadeIn 1s ease 0s 1 normal;
 }
 #grbl-open:checked ~ #grbl-close_button + label,

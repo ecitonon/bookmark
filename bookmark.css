@@ -12,10 +12,6 @@ body {
   background: linear-gradient(to bottom, #3eb370, #007b43);
 }
 
-h1 {
-  color: #fff;
-  font-size: 40px;
-}
 ul {
   list-style-type: none;
   text-align: center;
@@ -27,7 +23,7 @@ a:visited {
   color: #fa5858;
 }
 
-.container {
+.l-container {
   display: block;
   width: 250px;
   height: 240px;
@@ -38,45 +34,37 @@ a:visited {
   background-repeat: no-repeat;
   background-color: #fff;
 }
-.container#grbl {
+#grbl {
   background-image: url(images/logo_granbluefantasy.jpg);
   background-color: #a0d8ef;
 }
-.container#sns {
+#sns {
   background-image: url(images/www_marksign_net/iine.png);
   background-color: #164a84;
 }
-.container#twitter {
+#twitter {
   background-image: url(images/www_marksign_net/twitter.png);
 }
-.container#google {
+#google {
   background-image: url(images/www_marksign_net/chrome.png);
 }
-.container#yahoo {
+#yahoo {
   background-image: url(images/www_marksign_net/yahoo.png);
 }
-.container#rss {
+#rss {
   background-image: url(images/www_marksign_net/rss.png);
 }
-.container#graphic {
+#graphic {
   background-image: url(images/www_marksign_net/pinterest.png);
 }
-.container#movie {
+#movie {
   background-image: url(images/www_marksign_net/youtube.png);
 }
-.container#others {
+#others {
   background-image: url(images/www_marksign_net/ie.png);
 }
 
-#grbl-open + label > img,
-#sns-open + label > img,
-#twitter-open + label > img,
-#google-open + label > img,
-#yahoo-open + label > img,
-#rss-open + label > img,
-#graphic-open + label > img,
-#movie-open + label > img,
-#others-open + label > img {
+.burger {
   width: 2.5em;
   height: 2.5em;
   position: absolute;
@@ -84,7 +72,7 @@ a:visited {
   bottom: 0.5em;
 }
 
-.modal_contents > ul > li {
+.modal-contents > ul > li {
   display: block;
   width: calc(100% - 2px);
   height: 4em;
@@ -95,12 +83,12 @@ a:visited {
   white-space: nowrap;
   background-color: #2e2e2e;
 }
-.modal_contents > ul > .tittle {
+.modal-contents > ul > .tittle {
   position: sticky;
   top: -1px;
   color: #fff;
   background-color: #000;
 }
-.modal_contents > ul > li * {
+.modal-contents > ul > li * {
   font-size: 2em;
 }
