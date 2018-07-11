@@ -61,7 +61,8 @@ input[name="modal_sw"],
   animation: fadeIn 1s ease 0s 1 normal;
 }
 .open-switch:checked ~ .close-label {
-  animation : fadeIn 2s ease 0s 1 normal;
+  /* animation : fadeIn 2s ease 0s 1 normal; */
+  animation : changeColor 2s ease 0s 1 normal;
 }
 @keyframes fadeIn {
   0% {
@@ -69,5 +70,13 @@ input[name="modal_sw"],
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes changeColor {
+  0% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #000;
   }
 }
