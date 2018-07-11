@@ -33,6 +33,12 @@ a:visited {
   background-size: 250px 250px;
   background-repeat: no-repeat;
   background-color: #fff;
+
+  /* animation */
+  transition-property: background-size;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
 }
 #grbl {
   background-image: url(images/logo_granbluefantasy.jpg);
@@ -91,4 +97,9 @@ a:visited {
 }
 .modal-contents > ul > li * {
   font-size: 2em;
+}
+
+/*** animation ***/
+.l-container:hover {
+  background-size: 500px 500px;
 }
